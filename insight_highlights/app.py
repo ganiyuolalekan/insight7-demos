@@ -53,9 +53,9 @@ if start_project:
         document_data = {
             i: open(file_path, 'r').read()
             for i, file_path in enumerate((
-                "data/doc1.txt",
-                "data/doc3.txt",
-                "data/data.txt"
+                "insight_highlights/data/doc1.txt",
+                "insight_highlights/data/doc3.txt",
+                "insight_highlights/data/data.txt"
             ), start=1)
         }
     else:
@@ -184,6 +184,6 @@ if start_project:
                         st.write(i, highlight)
 
 else:
-    with open('README.md', 'r') as f:
+    with open('insight_highlights/README.md', 'r') as f:
         demo_report = f.read()
     st.markdown(demo_report)
