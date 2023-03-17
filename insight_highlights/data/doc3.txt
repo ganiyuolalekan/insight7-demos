@@ -1,0 +1,246 @@
+Speaker: 0
+Yeah. So I'll try and hide this as much as I can. So this is, so I'm just hiding this email for the email. That's an email column. Okay. Yeah, that's an email column. So I'm just cutting it as much as I can for the purpose of this stuff. So ignore this merge status for now, because this, this is there, because I've gone through the, the, the, the, um, I've gone through the application, right? I get this, you know, just business query query database and grab, grab this company names their, their details, their phone numbers, um, you know, the dates they created. Well, this is the date they signed on. This is the pain history, basically. Like what I mean, how many employees they're paying for. You know, all of these are internal data. Um, this is a huge list, right? Massive. Now, the problem is I cannot start emailing these guys one by one, but let's assume that I want to reach out to every one of them, right?
+Speaker: 0
+Um, so what I do is I have this extension here. This is, you know, mail merge for Gmail. When I go to start my mail merge, you can see it's working. It'll take a little bit of time because yeah, okay, maybe because I've done it before in the quickly respond. Now they, they, they don't catched already. So, yeah, so this add on emergency shoot, da blah, blah, blah. Okay? So create new draft. It goes into my Gmail, so I can just, you can see, and inside my Gmail, you can see that it's fired up the new messenger, right? Mm-hmm. I'll do all that. Oh God, I'm sorry. I'll, I'll put the email, I'll message, that's the draft, blah, blah. And I'm going to do this as test draft, right? Then it's saved, right? I mean drop, just save automatically. Um, lemme see. Okay, cool. Extens start. So normally updated my, um, my draft, but I didn't, cause normally, so see what this has done now. So let's, let's assume that I've already created a draft in my, in my Gmail. The reason why it's, the reason why, why you did initially is because I don't have any draft email. My draft email is zero. So I've had to just create, so the thing
+Speaker: 1
+You'll have to go and get a drafting email that I can pull from.
+Speaker: 0
+Exactly. So now what happened there was that the thing pushed me out to go and create a draft first. Got it. Now I'm going back to start again. So, normally I've created a draft. Now, you know, sender name. This is more from home base because I've been using this already. Yeah, yeah. Normally you'd start by typing the new stuff. Mm-hmm. Email. So look at that, that draft test draft, that was what we created, right? Mm-hmm. Boom. Then this thing here, track emails opened, clicked, or bounced, right? Mm-hmm. That is why you have this column, this column f that I told you to ignore, right? So when you tick on that box, it creates an extra column on this sheet and you know, it just gives you the status. When I send, so if I push, send 1500 emails, right? It's to send emails to everyone on this list. Now, I think the question you might wanna ask is how, how did, how does it know where to to, I mean, what column to to, to do the lookup of the emails, right? Yeah. So the, the, this stuff is quite smart that it knows by default that it should be column C,
+Speaker: 0
+Right? In a case where you have multiple columns with different emails, you can go and specify here what column, I think
+Speaker: 1
+Columns to take from
+Speaker: 0
+Ok. To, to take from jigar. But I think, cause this is a simple sheet that, that, that column is the only one. So here, and I can go, so it's looking, it's doing a look up on old columns. So now I can go and select anyone I want.
+Speaker: 1
+Got it.
+Speaker: 0
+Yeah. So then cancel. So yeah, sorry, I, I've just gone, I'll just, I've just done sent to 1500 and that's it. It'll send everything, it'll click, it'll, um, sorry. And then, sorry, I'm going to, so this merge status, it will, when, when I, when a customer opens that email, it'll give you open when they click on the link to schedule a
+Speaker: 1
+Meeting. Yeah.
+Speaker: 0
+It'll, it'll show you click, I mean, link something, whatever. I'll let you know. Yeah,
+Speaker: 1
+Yeah.
+Speaker: 0
+Um, if it bounced, like let's say the email, know they work anymore mm-hmm. <affirmative>, I don't bounce this, this one don't bounce. Mm-hmm. <affirmative>. Yeah. So it'll keep giving you all of that, you know, for the 1500 and that's it. And then your customers would go into, once they get that email, they'll click on the Calendly link and that's it. Like the job of this part at this point
+Speaker: 1
+Mm-hmm.
+Speaker: 0
+<affirmative>, the scheduling and all that. Mm-hmm. <affirmative> that is in Calendly. And then it comes into your email, and then you guys attend. That's it. That's, that's
+Speaker: 1
+Now, so the currently link from, how does, how do customers get that currently link?
+Speaker: 0
+It's in that draft email. So that draft
+Speaker: 1
+Email, is it in your signature? Cause I didn't see
+Speaker: 0
+Oh, no, no. So, because, you know, I was just creating a new draft email. Right. So I mean,
+Speaker: 1
+You didn't add it right?
+Speaker: 0
+I did not add it, yeah. Normally for me, like when I do that, I don't have the plugin. I don't think I have a Calendly plugin. I'm sure there must be a Calendly plugin to Gmail. I'll be shocked if there's not one already. But, you know, I I, I, I probably can just, I mean, I can just go into Calendly, um, Calendly. Yeah, Calendly and create one. You know, just create a, um, what do they even call that stuff in Calendly again? Uh, you know, you can just create a, a, a particular event and then just attach the link. And in your draft you just put, um, you know, click here if you want to
+Speaker: 1
+Yeah, yeah.
+Speaker: 0
+With me to discuss this, this, this, this, this. When they click on that link, they're out. So the only thing that plugin does that Gmail plugin is it tracks who clicks on the Calendly link. Now, whether they schedule or not, it doesn't tell you that. Like, that is, you know, that's ecosystem. They're not connected.
+Speaker: 1
+Got it. Um, so a couple of questions. You, the list that you have in that space, you have 5,000 participant. How does it determine which 1,500 to email? Is it the first 1,500?
+Speaker: 0
+Did I have 5,000 in that list?
+Speaker: 1
+Yeah, that sheet said 5,000 plus.
+Speaker: 0
+Um, sorry, I, I do not even observe how many people do on the list. Um, well, well there's, there's something though. Um, there's, there are a lot of empty columns in that, um,
+Speaker: 1
+Yeah.
+Speaker: 0
+Rules. That's number one. That's even is up to 1005. Cause I don't think I had up, I mean, sorry, I don't think I had up to 5,000. No. Ok. Oh, you're right. There's up to one 5,000 rules sha mm-hmm. <affirmative>. Yeah. Maybe, oh, I, I guess I'm guessing here, but I think I might be very correct, is that there's limits to how many can be sent at
+Speaker: 1
+Once, at once, five. How do you tell it to send next one? Five?
+Speaker: 0
+Yeah. Mean, I, I never go that far into the
+Speaker: 1
+Okay. You never have to go that far. Okay.
+Speaker: 0
+Yeah. Me, I've not had to go that far. Even, even that one five is too much. Mm-hmm. <affirmative>. So for me, I would send to the first like 200, that's my goal. Mm-hmm. Cause I don't want to be Yeah. Overwhelmed with, let me see. There must be a way, let me see, let, lemme share my screen again. I'm sure there must be a way to like set that. I've just not had to use it. Like a lot of my, a lot of my projects so far, like I just get, I, I cut down the list. Like I filter the list itself based on different criteria. So it always comes down way under like 500. So, but let's see, like in terms of like large projects, let's see. I mean, that would be useful. So extension yet another mail merge, import contact. So it even has some other import contacts. Google, Salesforce, check configure form notification. Okay, well let's start mail merge first. Oh, so now this thing is always asking for the column, right? You can't see that. Right? So use this column can also check that story also. So you can still, you can still email 1500 from this pad on emails will be sent. So yeah, so I mean, like, like we said, I think it's one five is the maximum capacity. Mm-hmm. <affirmative>, um, I don't know if there's ways that you can send to less than 1500. Uh, wait, I'm coming. I'm just trying to see
+Speaker: 0
+This Adam makes excuse of your column. Okay. All right. I don't think I can find that, but I'll probably just go into this document and see if there's any way to, um,
+Speaker: 1
+Yeah, it sounds like you don't have a lot of controls on the UI to really do some, like have, um, the kind of controls, like the UI doesn't really support you to have kind of controls you, you need in some scenarios. Mm-hmm. <affirmative>. Cause it's more of like a hack to solve the problem. Um, the other question I have is around, um, how do you, how do you get this data from, from your system to, so I, I guess you just wrote like an SQL query to export, like a data set, right? Is that what you do?
+Speaker: 0
+Yep.
+Speaker: 1
+Based on this particular behavior, then Okay, give me their emails and then you bring, bring into this. It's true. Okay. That sounds good. What is the conversion rate for, let's say you send 200 emails out. How many interviews do you typically get back
+Speaker: 0
+Conversion rate of what? Sorry?
+Speaker: 1
+The emails that go out to interviews.
+Speaker: 0
+Yeah. So I mean, I'll say maybe like 10%, at least one outta every 10 emails sent out would respond even more than, I think I'll say more than 10%. It's basically like 30% ish. So if
+Speaker: 1
+You send, you said you sent hundred emails, right? That means you probably get back around 20 emails back, 20 interviews
+Speaker: 0
+Easy.
+Speaker: 1
+Let's say you certainly get a better conversion rate on this particular message. Maybe more customers are willing to like, talk to you. Maybe they're having a problem and fixed. Is there a way you control, you can capture the interview you get? So let's say
+Speaker: 0
+That's currently,
+Speaker: 1
+So you go and do that in Calendly?
+Speaker: 0
+Correct.
+Speaker: 1
+What are you doing Calendly to fix that?
+Speaker: 0
+You go to, I don't know. My currently account is not giving me what I want. Let me see. Can I log in? I've not logged into calendar in a longest time, so let's see if it can let me in.
+Speaker: 1
+But do you even ever have to do that where you, you suddenly have so many interviews, I need to stop then what do you do you,
+Speaker: 0
+Yeah. So when you create, when you create a booking in Calendly, right? So this is, so this is my booking in calendar. All of that is all of all, all those questions they're asking is, is currently. So, uh, where is this one? What event is this? Yeah, so this is this, right? So your event name. So I'm creating an event, like, so let's say I'm interviewing people for, yeah. Um, I don't know, let's say for I seven, let's say I seven Userability testing, right? Yeah. This will be I seven user. This is what the customer
+Speaker: 1
+Yeah, yeah, yeah. That's what they'll see. Yeah.
+Speaker: 0
+Zoom your description. You add all the, all the context there and that's where you probably, um, have your, your, um, um, what's it called? Like any details like, oh, you out, we would compensate you
+Speaker: 1
+Got it.
+Speaker: 0
+$25 or something like that, you know, after this interview, blah, blah, blah. Mm-hmm. <affirmative>. Mm-hmm. <affirmative>, um, the Calendly link. So this is, um, the event link, right? So I think this is, what's this one? Um, sorry, I can't remember what this is anymore. Sha bought but is in the settings. Sorry, I'm trying to see where the settings there. Save and close first. Oh, is it this one? No, it's not this one. So anyway, what I'm trying to say is that for each of these events, like when you're creating those events, like you can set all these things like don't schedule a meeting before, before this. Sorry, let me see if I can find these things first.
+Speaker: 1
+No. Yeah, take your time.
+Speaker: 0
+Yeah.
+Speaker: 0
+I just can't remember where it's, but is it this one edit Chrome? So sorry, this is it now and they go round around. So yeah. So this, this is it, right? So when can people book it this event? We can speci specify the dates. So like, now I've kept this particular one, but the 1st of March, I'm not, I'm not, this event is no longer valid. Mm-hmm. <affirmative>, um, you know, invite invitees can schedule 30 minutes calendar days into the future. So anything more than 30 days, you cannot book. So if you're not available to speak to me within 30 days of my email, forget it. Cause that link will not work anymore. Once it drops into,
+Speaker: 0
+Uh, or indefinitely into the future, if you like, you know, you can set the date range mm-hmm. <affirmative> duration for 30 minutes. Um, define how long your events will be. It can be, yeah. Yeah. So how do you want to offer the availability? Yeah. And this, this one I think I customize it a bit, so I put some time. So that's okay. I should delete this. I don't want to talk to anyone on Sundays. Um, so yeah, Monday to Friday, nine to seven, um, I remember having a problem with this timing stuff mm-hmm. <affirmative>, uh, because I think it default defaults to ps. So, you know, people just, they book time till like eight o'clock, which you know, was crazy. So I had to come and change this because otherwise, you know, it means people can book anytime Yeah. With you that that doesn't work for you. So yeah, you said you have all these settings. I know that there's also a place that I think you can configure these things such that it'll always not book within a certain time as well, even between this year nine and I think maybe you just add new interval for Monday. Yeah. I think there are ways you can configure it such that, you know, you can specify nine to 12 here and say, I can do nine to 12 here, for example, and undo 12 to
+Speaker: 0
+And undo two to. Yeah.
+Speaker: 1
+So it's, you can define the period in which those interviews
+Speaker: 0
+Can
+Speaker: 1
+Yeah. But it also looks like your calendar and doesn't allow user to book over existing meetings. Yeah.
+Speaker: 0
+Correct. Yeah. So that's why you've synced. So you, you have to sync Zoom, you know, if Zoom like this Zoom stuff now, like I've, I've sync, I've, I've synced it. The the location. Yeah. Um, and also my Gmail account. I can't, can't remember how I set it up anymore, but yeah, if you Google that one, man, all this, all this, all this, all the stuff I Googled it, they were like,
+Speaker: 1
+Yeah,
+Speaker: 0
+You can link your, your Gmail to this thing, your calendar, your Gmail calendar to this.
+Speaker: 1
+So
+Speaker: 0
+It's, it actually, you know, it sees your calendar and it, it doesn't book over an existing meeting.
+Speaker: 1
+Yeah. Okay. That makes sense.
+Speaker: 0
+And I remember when I was setting it up that there are some meetings you can book over, but I think that will be set. I think you set that in Gmail.
+Speaker: 1
+Okay. That makes sense. I think that is, that is, that is very useful. I think the other question, um, would be around, um, yeah, I had, so is there anything else you use currently for outside of these interviews
+Speaker: 0
+For Calendly? No. Um, currently is basic, is there anything I use currently for
+Speaker: 1
+Yeah, I work, I'll start it over. Use interviews.
+Speaker: 0
+Um, uh, nothing for me personally, but people generally have it in their, and I'm meant to do that. So actually it's just that I've not done it. I'm meant to like, um, have it in my signature, like, you know, book a time with me, you know, so that, you know, if customers want to book just random meetings with me, you know, they have
+Speaker: 1
+Access to
+Speaker: 0
+And they have a slot, you know, they can, they can always book and talk to me about anything. So, um,
+Speaker: 1
+Open calendar time in your calendar for users to, customers to drop in on. Right.
+Speaker: 0
+But like I show you in currently, like you can, you can say, I can even say, okay, I only want to speak to customers every Wednesday. Yeah. And I'll just, and currently will just, you know, it'll just show because once they click on that link, it, it shows them my, my calendar and that's it.
+Speaker: 1
+Yeah.
+Speaker: 0
+It's only Wednesday you get, it's only show Wednesdays, nothing else. Yeah.
+Speaker: 1
+Okay. That, that, that, that makes a lot of sense. Um, but for every project that you work on now, like every research project you want to do, let's say you collect data for a particular question you have, you would come into Cal first to create that as an event and then share that link and that link expires outside particular period, right? Yeah. Okay. I
+Speaker: 0
+Mean, I, I mean, I can just set like honestly, like personally what I just do, instead of creating multiple events every time, I just, you know, I think Calendar has made it so easy. You can just copy
+Speaker: 1
+One and extended time. Yeah.
+Speaker: 0
+It did some stops and fine. I mean, usually it's the same bullshit they're saying in all this stuff. So you're, it just minor changes? I are there. Yeah.
+Speaker: 1
+Yeah.
+Speaker: 0
+Or edits. You're there because don't forget, see your draft email Yeah. Is what really tells the customer what you're doing. The currently is usually there's less edits in currently because currently is just saying, oh, here is your Zoom link. Um, it's also in here is your Zoom link. This is, yeah. Just title of the meeting. Um, and it says, oh, you know, maybe 30 minutes with more or something from home day. Yeah. Um, that's all really like the, the real stuff is in the draft, the email that you sent.
+Speaker: 1
+Yeah.
+Speaker: 0
+That's the content of like, that's, that's what I really, and currently you can also put an agenda though. That's another thing you can say maybe first five minutes like this. That's why you do that in currently not in the email. So currently is really much, is so much about the meeting and the, the, maybe the agenda. That's it. The zoom link. That's it.
+Speaker: 1
+Yeah. The context for the call is in the email draft. Yeah.
+Speaker: 0
+Correct. And hon, I, I think sometimes people, I mean you might have some of that content in currently as well. It's just that for the project that May I'm working on mm-hmm. <affirmative>, like, you know, the fact that you've even gone as far as currently means that you are ready to discuss that thing. Do you get, so I really don't need to like specify too much anymore.
+Speaker: 1
+Okay. Do you pay for currently, do you know, is it, do you know if it's a free account or do you pay for
+Speaker: 0
+I don't think so. I think currently you have to pay for currently
+Speaker: 1
+You think you're paying for it.
+Speaker: 0
+Yep.
+Speaker: 1
+Do you know how much, well, it looks like you're on the free plan.
+Speaker: 0
+It looks like there's only two this in here.
+Speaker: 1
+No, but it says you're on the free plan up there.
+Speaker: 0
+Oh, you're on the free plan. Okay. Oh, so that means, yeah. Sorry, I didn't even see that. Yeah, the trial ends that end ended on this. Okay, cool. Well, it's doing the job for Meha.
+Speaker: 1
+Yeah.
+Speaker: 0
+Yeah. So what's, what's the plan giving you, sir? So HD sits per month, two kind connections. Oh, that's smart. Yeah. Create unlimited event types. Oh, okay. Cool. Yeah. But this one is, there's no, there's no sense in this now. I just edits the one that I have.
+Speaker: 1
+Yeah. I think for your use case might only more than one and probably works for you.
+Speaker: 0
+Yeah. So
+Speaker: 1
+The, I think so value here, I was thinking, okay, we say, oh, we save you on the cost for calendar by using, doing the work at I seven, but it sounds like it's more of the integrated experience that might really value prop here versus what are mail is mail
+Speaker: 0
+Metric. I, I, I don't think, uh,
+Speaker: 1
+I mean, you're sending out emails, emails cost money, so you're likely paying for that one.
+Speaker: 0
+Um,
+Speaker: 1
+Do you have a company account for Mailman or you just, you just went and signed up by by?
+Speaker: 0
+Yeah, I just, yeah. Yeah. I just, I I downloaded our shit, man. I did not, it's not sync, it's not like I got it from OPT something. No.
+Speaker: 1
+Okay. I'll look pricing plan for that one as well. Okay. Just to wrap up the call, what would you say, I mean, this looks like a good solution you have built, but you have, you are putting two, you have put two different solutions together. You have your sq um, SQL solution, you have mail marriage, you have Lin and you have Gmail putting like four things together. Um, what, what would you say is still painful about this process?
+Speaker: 0
+I think the painful part is the,
+Speaker: 0
+I think the painful part is of everything that I've mentioned here, right? So let's assume I come from my, from my s SQL query. I successfully go through, um, yam and I, the mail merge stuff, send email, all of that is easy. I think the hard part is, so when I've scheduled the interviews using Mr. Calendly here mm-hmm. <affirmative>, um, I'm scheduling into the future in the next, next two weeks. Trust me, I don't remember the name or anything about these guys here. So I think it's just, I think the, the, the thing that would be most useful is when I'm, I mean, first I send emails to 200 people. Now I'm speaking 20. By the time I get into even the second person, I don't remember a shit anymore. Mm-hmm. <affirmative>, I think the question is how do I, how do I, there's nothing in this flow here that tells me about customer two that I'm speaking to ahead of that meeting, or that gives me any form of preparation at all before that research call with that customer number two. And then when you scale that up to like 20, you can imagine the amount of work that I would've done just to like, speak to people.
+Speaker: 0
+So that, that, that for me. But this whole process of scheduling, don't forget because I'm scheduling 20 at a time. That's fine. The bigger pain point is handling those 20 people.
+Speaker: 1
+Mm.
+Speaker: 0
+When it's time to like do the actual interview. Because I mean, I've forgotten about customer 20 when I'm speaking to customer one. So what makes easy for me, based on the insights that I've gotten from customer one to five mm-hmm. <affirmative> to have a really good interview that is optimized for my goal by the customer six, you know, there's still nothing that, that does that.
+Speaker: 1
+And then go ahead.
+Speaker: 0
+Yeah. So today, the way may I solve that for that problem is I always have to like go into my database, you know, uh, home base to like query different databases to get information. And then the thing is, you don't, you also don't want to get information about the 20th customer you're speaking to because you're probably speaking to that guy in the next one month. Mm-hmm.
+Speaker: 1
+So you're getting one at a time.
+Speaker: 0
+You're getting one at a time. And then the other thing is, it is not even just that, is that by the time you've spoken to five, you've gotten some insights. So by the time you're getting into like the 10th customer almost validating versus like, you know, versus like, okay, tell me something new that I've never heard is more of like, you know, does it, am I, am I just saying plus one, do I have like five problems and I'm just, by the time I'm getting to customer 15, I'm just doing okay plus one here because this guy too, he has that pinpoint Yeah. And that guy too, he has that. So, you know, how can I just easily just do that check box and how can I know enough about that customer 15 such that, you know, I'm asking him specific questions that will add to the value that I've gotten out of one to 10 versus like doing the same thing all asking the same question. I,
+Speaker: 1
+Yeah. Okay. Yeah, that sounds more like, yeah, the interview, well post interview. Do you ever have to go and look up the customer again and see, okay, what did they say? Um, customer I spoke to last week, I just wanna see some of the insights that, you know, he gave me maybe in another like context.
+Speaker: 0
+Yeah. The only time, the only time I do that is if they give me, um, an insight that is very unique to them. Like, uh, oh, I have an issue with this and I'm investigating that issue and that issue is very, very unique to them. But if it's something that I've heard from customer one to five mm or it makes no difference or like, I don't, I don't think I go back to the customer to look into the details anymore. Like at that point, that problem becomes like a problem that I'm solving. Um, and yeah, I mean, except there's a reason to go and refer to specifics.
+Speaker: 1
+Yeah.
+Speaker: 0
+You know, there's no need.
+Speaker: 1
+Well, is there a way for you to know today that another colleague, another PM or designer emailed a particular customer in your data set last week for an interview as well? Keep there.
+Speaker: 0
+That one is a great question. That's, that's a problem that, um, I think we're trying to solve now. Um, that that's problem. That's problem. Um,

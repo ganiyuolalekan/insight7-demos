@@ -1,0 +1,115 @@
+Speaker 0    00:00:02    On the website, you see a signing link. So if you're able to share your screen, let's just walk through that process. And then, um,  
+Speaker 1    00:00:12    It said, who's disabled? Participant screen sharing something. That's something you might  
+Speaker 0    00:00:17    For you.  
+Speaker 1    00:00:18    Yeah. Disabled.  
+Speaker 0    00:00:20    Let me see.  
+Speaker 1    00:00:21    So you might need to do something  
+Speaker 0    00:01:15    Just drinking.  
+Speaker 1    00:01:57    Yep, that seems done. It. Uh, if can see my screen.  
+Speaker 0    00:02:02    Yeah, I can,  
+Speaker 1    00:02:05    Uh, what you want me to do.  
+Speaker 0    00:02:07    Yeah. Sign up. So yeah. Can use any Google account.  
+Speaker 1    00:02:19    Uh, nice.  
+Speaker 0    00:02:37    All right. So, um, yeah, just want to follow your, kind of, follow how you would experience an app like this. Um, knowing, knowing like all the things you know about what it could do for you. Um, so coming into the app, how would you like navigate that first time? What is it like, what you think? Just wanna, So your experience for the first time?  
+Speaker 1    00:03:02    Yeah. So from coming in, let's see, it's a little unclear. Do I see transcribe, audio, transcribe video? So that might be some sort of recording. Don't see any icon for any video. Things I'm familiar with. I go create, create Insight and see what that is. And see, I learned that customers like, uh, down doesn't seem to have anything. Okay. Let's see what happens with that. Not sure what happened. Maybe go to thes. I don't see it. Hmm. See what I can add to the library is maybe, oh, summarizing. Looks like I can put some texts and summarize, but I dunno what I get. Okay. That didn't seem to save. I'm just gonna run away. Um, don't see anything. Yeah. I would maybe put an asterisks, maybe nothing, any default list Doesn't look like it. And filter. Okay. Inside of notes, uh, is there a help somewhere? Not that I can see. Yeah. At this point I'm like, I'm not sure what to do here, so I'm just going to leave <laugh>.  
+Speaker 0    00:04:56    That's, yeah, that's, that's the state of the product today. <laugh>. Yeah. Um, yeah, we, we need to figure out a way to help you get value from the product.  
+Speaker 1    00:05:07    Mm-hmm.  
+Speaker 0    00:05:08    <affirmative>. Um, so, so let me try to guide you. And we we're also gonna be adding some, um, product tools, guides that would help you get value. Um, so clearly from the library section  
+Speaker 1    00:05:19    Mm-hmm.  
+Speaker 0    00:05:20    <affirmative>, you weren't able to get that. Yeah. This was supposed to help you summarize, even though there's like a text up there, but that was not enough. So can you grab some text online, maybe like an article, um, that you think you wanna summarize and see if this is gonna help you?  
+Speaker 1    00:05:39    Um, does it take links or do you have to take text?  
+Speaker 0    00:05:42    It can take links, but let's try text. Um, I think links only work for Medium and, and WordPress blogs  
+Speaker 1    00:05:54    For now. So actually, well, there's an article. Let's do, I was just reading this again the other day. Cool. So can  
+Speaker 0    00:06:23    You refresh? Okay. Um, can you try again?  
+Speaker 1    00:06:40    Put that in s  
+Speaker 0    00:06:49    Yeah. It's not working. Yeah. Okay. So let's try something else.  
+Speaker 1    00:06:55    Sure.  
+Speaker 0    00:06:55    Um, let's try to analyze, uh, cost. So if you go back to the home, there's that analyze data button, but it wasn't, I don't think it'll probably didn't occur to you that maybe that could help you, like analyze your customer interviews.  
+Speaker 1    00:07:10    Mm-hmm.  
+Speaker 0    00:07:11    <affirmative>, what kind of problem do you think you, you'd like to see there?  
+Speaker 1    00:07:17    Um, it's hard to predict. I mean, if I'm coming in, it almost feels as if most, most of these feel like they'd be oriented around the topic, right? So it almost feels like there's some level of what's the top level concept. And I guess maybe part of what I struggled with, with analyzed data in my head of saying, well, which data I dunno, data I have yet. Yeah. But recording part was compelling. I'm like, Oh, recording now one I understand let just put happens. But I think there's something to be said for like the like topic or areas like super set of insights and notes and even like analysis. And so yes, I could see at a random like ad hoc analysis or something in there, but you know, as I see analyze data, I start getting worried cuz I'm like, well that sounds like an Excel file. I don't know if I normally do stuff with Excel files. And even if I do, I don't know that it's in the right format. And so it's just like, I don't know what that does. Yeah. So  
+Speaker 0    00:08:26    Can you try to on maybe interviews or just any data you have here?  
+Speaker 1    00:08:33    Uh, like, just normal like text that we were talking  
+Speaker 0    00:08:38    About? Yeah, just normal text. So let's say imagine you had your customer interview, got some notes,  
+Speaker 1    00:08:46    Oh, this is gonna be fun. Most of the notes sometimes aren't, are, uh, where would this be? Uh, they aren't straight. Oh, I'm not gonna be able to, Well, one sec. Lemme see. Yeah. Why, why student is gonna be interesting to experiment with. Uh, gimme a sec is most of the notes aren't, um, is basically shorthand,  
+Speaker 0    00:09:31    Right?  
+Speaker 1    00:09:32    So that's gonna be another fun one. So literally just grab Yeah, these notes I wrote, uh, copy and here, <affirmative>.  
+Speaker 0    00:09:45    Oh, is this the, A browser is in? Yeah. Oh, okay. I saw someone. I thought it was cool. I haven't just got into like dry it all. Um, yeah, so on this screen, Oh,  
+Speaker 1    00:09:57    Sorry.  
+Speaker 0    00:09:57    Yeah, no problem.  
+Speaker 1    00:09:59    I click,  
+Speaker 0    00:10:01    Yeah, this is strange. This doesn't happen to me. This blank screen after you save.  
+Speaker 1    00:10:05    Yeah,  
+Speaker 0    00:10:06    But I, yeah, I noticed the app. So, so as I, I did this session with,  
+Speaker 1    00:10:11    Um, Okay. At least it's save this time. All right.  
+Speaker 0    00:10:13    Yeah. <laugh>. So yeah, you could open, it could click share, try to like open the new tab and see what that looks like. Yeah. This previous is, is not where it needs to be. We're making an update to this, but yeah, you can view the, the content you add. So let's say you custom interview, you can do, um, can you go to try and open that link on the new browser? On a new tab? Sorry.  
+Speaker 1    00:10:40    Sure. Actually we see what happens there.  
+Speaker 0    00:10:48    Yeah. So kind of gives you like this, if we, this also needs to be formatted properly.  
+Speaker 1    00:10:54    Mm-hmm.  
+Speaker 0    00:10:55    <affirmative> gives you a link you can share with other people and say, Hey, this is like, this is a note or this is a summary that I just, you know, did to see that analysis. Um, yeah. So let's, let's put that data there again. Yeah. And then see if you can analyze it.  
+Speaker 1    00:11:20    Mm.  
+Speaker 0    00:11:22    Yeah. So, so now, so two things. One is you can share with your team. So because you didn't click share with team, it'll only be private to you. But if you, if you click that, then you, it's available to the entire team. Everybody who has that domain can see what you're publishing. Um, so with, with, with Analyze, it should won't show you like keywords. Mm-hmm. <affirmative> article, I don't know. I think that is loading. Then you can also highlight the text here. Okay. Click analyze now and then yeah, it shows you the keywords. This also, there's an update coming for this.  
+Speaker 1    00:11:57    Mm-hmm. <affirmative>,  
+Speaker 0    00:11:59    You know, errors there with the keywords, but supposed to help you like analyze it. Then if you highlight some of the text  
+Speaker 1    00:12:06    Mm-hmm.  
+Speaker 0    00:12:06    <affirmative>, you can then start to create tags and you know, um, highlight create tags, very advanced sections.  
+Speaker 1    00:12:18    Okay.  
+Speaker 0    00:12:20    And then if you, if you hit finish and then go to the search. Yeah. So then it becomes available. Um, but all the tags have added, then you can find it is those tag with search for now doesn't search the content working that working. So yeah. Or trying to shift that search in the next few weeks.  
+Speaker 1    00:12:48    Okay.  
+Speaker 0    00:12:49    Where I can do that. Um, and I think maybe the last thing I'll show you and then kind of just give your overall feedback is  
+Speaker 1    00:12:57    Mm-hmm. <affirmative>  
+Speaker 0    00:12:58    The, so there's a, so this, there's an extension that helps you like things from the internet.  
+Speaker 1    00:13:05    Mm-hmm.  
+Speaker 0    00:13:06    <affirmative>. Um, so if you click add to Chrome  
+Speaker 1    00:13:08    Mm-hmm. <affirmative>.  
+Speaker 0    00:13:13    Yeah. I'll also like to see how you use this extension. So imagine we just get to install the extension, you know, it can help you like save relevant links from the internet. Let's say you're working on a project. Many of us, we already have a, we receive our personal links when it comes to work stuff. We're not really able to like, um, Yeah. Organize like secondary research data or I think it's showing the, the medium one. Can  
+Speaker 1    00:13:45    You, So maybe,  
+Speaker 0    00:13:48    But it should work. It should work. Do you have it?  
+Speaker 1    00:13:55    Yeah, sure. <affirmative> Is that dis or  
+Speaker 0    00:13:59    No, not disabled. Maybe. Cause you're not signed in your browser  
+Speaker 1    00:14:07    Signing.  
+Speaker 0    00:14:08    Are you signing on browser?  
+Speaker 1    00:14:10    Yeah,  
+Speaker 0    00:14:21    It's not  
+Speaker 1    00:14:29    Refresh something more generic, not fancy.  
+Speaker 0    00:14:39    Yeah,  
+Speaker 1    00:14:45    Sure. What did I get? Eh, if I decide to, Interesting. What if I decide to do another one? Yeah. Be different one. No.  
+Speaker 0    00:15:07    So it's actually highlighted the color doesn't stick all the time. So you did it. It's there once you see it in that dropdown. So if you go to the app now, if you go back to the app  
+Speaker 1    00:15:18    Mm-hmm. <affirmative>  
+Speaker 0    00:15:22    Where, where, where would you think it would go?  
+Speaker 1    00:15:27    So I would expect to potentially see something in uh, recent activity. I would also guess, uh, library and search. Um, and I guess if we're doing things for free, I might as well get free insights. But maybe that's asking too much. But at the minimum, like library seems reasonable. Yeah. Cause I'm saving the library. And then recent activity seems compelling as a, I did a bunch of stuff that's related to inside seven and so I'm expecting some sort of feed here that captures what I did.  
+Speaker 0    00:15:58    Right. So do you see a lot of, do you see value in your own recent activity? Because what we have here is the team activity, so what people are doing across your team. But do you see value in like just your own activity, what you're doing on the app?  
+Speaker 1    00:16:15    I think it's, it could be like a log. I do see some value in sometimes, especially when I transition between days, I have this challenge that I don't remember everything I've done and I might have read or reviewed some recordings. So one for example is I had a set up pages with a bunch of customers. I talk to a bunch of notes and videos during the day when I'm actively engaged doing deep work on it. I can remember I was here then I did this and I did that. When I leave and come back, sometimes it's like, did I watch this video already <laugh> or not? And you know, it would just be nice to know like from here I was like, alright, you know, I actually did a bunch of the website stuff. Yes. Could it be redundant? And you know, noisy. Sure. There's probably some argument there. But, and then just had a quick glance. I come in the morning and I was like, okay, last thing I did was, you know, clip this thing. I reviewed these three insights. Great. Let me pick up from here so to speak.  
+Speaker 0    00:17:14    Okay. Okay. Sounds good. Um, so go to your library.  
+Speaker 1    00:17:20    Mm-hmm.  
+Speaker 0    00:17:20    <affirmative>. Yeah, library's where it's at. Um. Oh, that's strange. What were you still highlighting as a Oh, as a guest. I don't know why it's not logging you in. I think that's why it's is very strange. Like all the people I've done this with, it shows up for them. So do you highlight to show Okay. As a card.  
+Speaker 1    00:17:46    Mm. Okay.  
+Speaker 0    00:17:48    But yeah, somehow because it's still seen as a guest. I don't know why that is happening, but that's probably like a, A box somewhere.  
+Speaker 1    00:17:54    Yeah.  
+Speaker 0    00:17:54    Um, but yeah, I think that those are like the key capabilities you've seen where shipping like the transcribe this, you know, feature this week also to save the link directly from the home page. So you don't need the extension without the extension. You can just grab a link, put it there, goes to your library.  
+Speaker 1    00:18:12    Yeah. Um,  
+Speaker 0    00:18:13    And then yeah, helping you analyze like the one I mentioned where to just take the AI will take the data and out some insight for your can publish that as a report is also something that we're trying to ship this week.  
+Speaker 1    00:18:27    Okay.  
+Speaker 0    00:18:27    Yeah.  
+Speaker 1    00:18:29    No, that's cool. Um, I'm curious how you think about, you know, a lot of research is also the content exists in various two, so Weblinks is one, but you know, Word documents, you know, Google docs quota, no trends have tons of like okay, has the report or has the notes and I don't know those can feed in and extract from.  
+Speaker 0    00:18:51    Yeah. So ability to like save links, just research links and kind of organize that somewhere, right? Maybe based on the, that you're working on or what  
+Speaker 1    00:19:01    Not Actually beyond that, like I have some early summaries or a bunch of summaries, right. That I word documents or in PowerPoints. Um, like basically I have existing collateral or existing workflows, right? How can I leverage those things here? Um, cause even though I think in quota almost all the research, everything is in some quota document. Um, I'm sure that notion is probably the same thing. Yeah. So Microsoft, it's typically spread between a Word document, um, some link in the much larger like research database that aggregated all the research in the company. Yeah. Uh, PowerPoints that summarize, right? And so I don't think that's unique to any of these companies in terms of there's existing collateral that represents research that is just hanging around. And so I don't know how you're thinking about that, but that's one way I'm looking at this going, well, I better be able to input some of the existing stuff I have. Uh, yeah. And then, you know, easy ways to kind of single click copy and paste into other tools. Maybe an email or something that I would eventually do.  
+Speaker 0    00:20:00    Yeah, absolutely. So I think we're starting out with the ability to just copy paste from those documents straight into the editor and click analyze and it brings out the insights that's the basic workflow. And in the future make it easy to say, okay, import CSV or other format from, or PDFs and stuff.  
+Speaker 1    00:20:17    Yeah.  
+Speaker 0    00:20:18    Yeah.  
+Speaker 1    00:20:23    Nice. I mean the thing that as I look at this is I'd be curious how you, how people think about the world, at least me looking at this, I feel as if it's divorced from the project itself of doing the research. And so this feels like the home of, you know, project X in that project. I could data, I could summarize the data, save link, add audio video that is for, you know, project home. Um, the idea that kind of home is a top level analyzing data and summarizing it feels a little disjointed. I dunno if I can tag them, but even then it feels weird where the tag feels like a kind of lower level concept versus I'm doing this research and here are the things shared. And so I think that's some of what wasn't as compelling for me as I was looking at this page.  
+Speaker 0    00:21:16    Yeah. So with this page idea is to give you short shorts to get jobs done.  
+Speaker 1    00:21:23    Yeah.  
+Speaker 0    00:21:24    So it's like that process of helping you quickly get started on the app, like before it was just blank, right? So, um, but maybe there's a better way. We're also trying to ship projects where you can go there, create a project and that would be like a starting point.  
+Speaker 1    00:21:40    Yeah.  
+Speaker 0    00:21:41    Um, so maybe, yeah, maybe we could integrate app feedback with like the projects experience, but we just, we just we're still like ITing on the, on the home. What, what do you think a home experience should be like for you for a tool like this?  
+Speaker 1    00:22:03    I mean you could go either, right? I know it's still early, but it one compelling thing, right? Is a good example for me in my mind is honestly either like Grammarly or Hemingway, right? Have you used either of those? Humming editor?  
+Speaker 0    00:22:16    Yeah, I've used Grammarly but not actively  
+Speaker 1    00:22:20    Hemingway editor, right? Like I can just come in here and be like that's boom Yeah. Of stuff. So right. There's this version of it which I think is what your angling towards of hey you come here because you can drop this thing in, you get some insights. Um, depending on how you position that and angle that and like how you organize that. I could see, you know, use case here just like, okay you are my, in the same way that people use Gong for let me go and find interesting. I can send, I can give people show when they come in. They just watch this thing and very focused. So that's one world. And so in there gong just does the one view is here are the calls. Then you can do searching and filtering on that based on like who meeting, so on, so forth.  
+Speaker 1    00:23:00    Yeah. Yeah. I approach nothing wrong with that. Yeah. I think other side is if you're now saying, well this is going to become like longer term, right? Again, for me, for me's obviously I think about research is a whole program, right? Each thing you use a whole project and it's a combination of insights, notes, recordings and some of these things. Then at some point there has to be some sort of, you know, way I can represent that as a concept and then potentially start with that of like, okay, I came here, I can maybe make a draft thing when I'm not sure, put a bunch of stuff together. Like, okay, quickly this thing has already spun up, you know, user test accounts and all this stuff for me. And I can just start to like, okay, hey, a bunch of links here, a bunch of things and I can quickly just get my project going. Uh, there may be some lightweight level of project or task management in there who knows might not be as heavy. So that could be your, that angle of like, no, this is actually a destination. So you might argue that, hey, let's just start with like, you know, data to insights first. And then that becomes, okay, lemme come in there and then as I build enough, you could then move into the, okay, now it's not just kind of one and done, one and done one and done. You could actually it. Yeah.  
+Speaker 0    00:24:07    Yeah, absolutely. So this analyzed data is supposed to be that button that takes you to that Hemingway view just showed me where you can the data and then click analyze and give you the insights. Um, I think we need to, the language that copy there needs to be better. Um, it's not, it's not so clear.  
+Speaker 1    00:24:25    Yeah. I mean simple things like iconography might help, um, logos or things just so it's compelling of like, okay, what actually's a reason too much about it, especially if I'm using tools could help. Yeah.  
+Speaker 0    00:24:40    Fantastic. Yeah, that's great feedback. Um, yeah, I think, I mean we have a ton of work to do, but has super helpful <laugh>.  
+Speaker 1    00:24:49    Yeah.  
+Speaker 0    00:24:50    It was like the more we shift, the more they, they stopped to do <laugh>. It's  
+Speaker 1    00:24:54    Crazy. Yeah. I mean, I mean this one, yeah, it's gonna be anything that is in a generalized workflow problem. Note taking. 
