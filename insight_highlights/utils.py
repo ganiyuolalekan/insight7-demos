@@ -26,11 +26,14 @@ from langchain.utils import get_from_dict_or_env
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.chains.qa_with_sources import load_qa_with_sources_chain
 
+from dotenv import load_dotenv
+load_dotenv()
+
 
 THRESH = .2
 similarity_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
-OPENAI_API_KEY = os.environ.get("OPENAI_API_KEY")
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 
 def app_meta():
