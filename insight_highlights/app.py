@@ -38,6 +38,6 @@ if start_project:
         st.write(introduction)
 
 else:
-    with open('README.md', 'r') as f:
+    with open('insight_highlights/README.md', 'r') as f:
         demo_report = f.read()
     st.markdown(demo_report)

@@ -26,7 +26,10 @@ def doc_correction():
     divider()
 
     if use_test_output:
-        doc_file = random.choice(["data/doc1.txt", "data/doc3.txt"])
+        doc_file = random.choice([
+            "insight_highlights/data/doc1.txt",
+            "insight_highlights/data/doc3.txt"
+        ])
         document = open(doc_file, 'r').read()
         st.success("Using a preloaded test document", icon='✅')
     else:
@@ -79,7 +82,10 @@ def prompt_eng():
     divider()
 
     if use_test_output:
-        doc_file = random.choice(["data/doc1.txt", "data/doc3.txt"])
+        doc_file = random.choice([
+            "insight_highlights/data/doc1.txt",
+            "insight_highlights/data/doc3.txt"
+        ])
         document = open(doc_file, 'r').read()
         st.success("Using a preloaded test document", icon='✅')
     else:
