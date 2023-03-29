@@ -1,4 +1,4 @@
-## Frequency Based Theme Demo
+## Insight7 API Layer Demo
 
 This is a demo application for testing different layers across themes, and frequency based API.
 
