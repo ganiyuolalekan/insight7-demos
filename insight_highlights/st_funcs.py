@@ -72,7 +72,7 @@ def test_doc(accept_multiple_files=False, return_used_test=False):
 
             if accept_multiple_files:
                 document = {
-                    doc.name: StringIO(document.getvalue().decode("utf-8")).read()
+                    doc.name: StringIO(doc.getvalue().decode("utf-8"))
                     for doc in document
                 }
             else:
