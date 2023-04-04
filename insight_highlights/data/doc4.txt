@@ -1,0 +1,172 @@
+Speaker: 1
+All right, cool. Um, so first question would be around, I think we could start from the, the whole kind of interview, um, set of, usually we start with identifying the right users, um, and then reaching before you then say you want to reach out to them. So one part is identifying those who, who you need to reach out to. Um, and then setting, uh, setting up the interviews will be like the next, next part. So maybe we talk a little bit about that, that first part of, um, you know, finding the, finding the right users and then, you know, sending them an an in invitation. Right. Um, and then the other parts would be like setting up the interview events in the calendar, you know, creating time and all that stuff. So what, what, what would you say is the most challenging part of sending out the invitation?
+Speaker: 1
+So, just to backtrack a little bit, one thing that we have decided to do on this is, um, we've decided to leave out everything that has to do with connecting to the users or the customers, like database or product analytics tool. Cause that would just create more complexity. So people start, oh, you wanna have access to my data, or start taking integrations. So we're gonna allow user at this project, first version users to go and identify the customers they want to talk to. Um, somehow they have an email list or people that they want to reach and they've been able to filter and say, okay, these are the kind people that have the problem. Then we take it from there. So we wanna automate everything else that is left from that point on. So I think starting from, oh, you have an email list of people you want to reach, what is painful about the brainstorm process? Does that make sense?
+Speaker: 0
+So as You mean I have an email list?
+Speaker: 1
+Yeah.
+Speaker: 0
+You are asking what is painful about going on from there?
+Speaker: 1
+Yeah, exactly. Exactly. Uh, maybe, maybe we'll start with, maybe we go further a little bit, like how do you get that email list today so that we see if there's anything else to compromise there. But yeah, we we're not gonna be trying to go into your analytics tool today to pull out the database for you, or, and I don't know how to get the database in the first place. So maybe you can talk about that.
+Speaker: 0
+Okay. So like, we get the email. I lemme see.
+Speaker: 0
+So normally, um, we have like HubSpots that has all the marketing workflows and all those things, right? Users that have carried out certain and HubSpots event and um, actions are linked to our app where, um, if users carried out, if users carry out certain actions or do some things or reach a certain household, it triggers an SPOs, you know, workflow. So generally from SPOs, we can tell the people that we want to talk to with the meet set the criteria, if we set, if we set up those workflows. So that's, that's, that's easy In terms of like the email list, um, maybe one, maybe call sometimes, you know, we don't get to do those things, um, proactively, right? Mm-hmm. <affirmative>, that's one thing. Cause it's kinda like, oh yeah, yeah, we need to talk to you guys who, I've done this in the past 60 days.
+Speaker: 0
+And we're like, oh, okay, well we didn't set up the workflow 60 days ago. <laugh>, that was one Second is, um, so we don't, we don't rely on Oxford as much for that lately because marketing are just consolidated into their thing. For products. It's always like, well we want to know today that 16 days ago we didn't know 60 days ago. How do we deal with it? So we do, we use mixed panel because whether you knew or not mixed, we track some of those things and you can use those events to filter out the people that meet certain criteria. Mm-hmm. <affirmative>. So that's how email lists come. However, the, the getting of the email is less of an issue than, is this the right think for example, I, cause I right? Yep.
+Speaker: 1
+Yep.
+Speaker: 0
+We see our user as a group. I think it's,
+Speaker: 1
+Oh, lemme lemme just pause. Is that better?
+Speaker: 0
+Yeah. So we see our users like a collective within an organization. So it's beyond the events that they carry out in our apps. Sometimes you want to know who, who is the decision maker, who influences things over here and stuff like that. So that's where the challenge comes. Cause an email list that can put all those events together. But it's kind of like, is this the person that manages this team? I don't know that that's where it becomes strict because there's no point talking to maybe like a developer when you need to be speaking with his manager. But how our tool is helping you, it doesn't, it's not about the event. So that's the big, the issue there. Sometimes we rely on our CS team, but again, I think we've also not been like the most proactive customer service that they can say, oh if you're looking for this or talk to this, this, this, these people, we already profiled everybody in the organization. So when I say zog, I'm think organization. So they've already profiled every org and these are the key people, these are the influencers, these are the team members. We don't have that level of granularity to say, okay, once you just talk to all the team leads in all the zos, that's where the travel comes. Does that make sense?
+Speaker: 0
+So honestly, from where we have a right profile of the people to talk to, Sheline is not really hard. Sometimes I just like it affecting in user interviews, upload the email addresses there. Mm-hmm. And um, user interview does this thing with Sheline. Sometimes it's very wonky with how it integrates with your client when the user agrees and all of that. It books it on your calendar. You see the user that's in, you know, all of that is kind, I don't wanna say it's seamless in user interviews. We can, your Google account can disconnect at any time and you don't see it on your calendar. You all of that is there, but the shared is, is not much of an issue. Like if I have an DISA amount to book calls for them, that's like the easiest thing to do for us. You, I think now Google already also has like this scheduling thing. As long as you put a link in the email. Currently we use currently a lot. So we don't have much of Schedule Link. Does that help?
+Speaker: 1
+Yeah, yeah, definitely. Um, so I think something I want to understand is, so you said HubSpot is your set of a workflow that helps you, um, identify the right people to talk to and stuff and then, but you don't know if you're talking to the right people. So how do you determine who the right person to talk to is? How do you arrive about that today?
+Speaker: 0
+Today we suck at it. That's why it's a problem for me today, right? Because what, what I consider is beyond user doing actions in the app, the people that are probably influential that I want to talk to about the potential for this organization converting or the potential of, of this organization, how they're experiencing their trial period. Even not every person that goes into the app on a day-to-day basis to do this stuff. That's why it's kinda like the event in the app is not sufficient information. Sometimes the person may not be the most active person. They may be in the app, but they're not the most active person because they're not the engineering manager's planning the work. But it might be the VP of product or the head of engineering in this organization that decides that, okay, this is a tool that I want my team to use. Now the people that are using the product may have a significant influence in the decision, but the ultimate decision maker may not necessarily be that per may not be the person that's in the app every day. That's where the problem is.
+Speaker: 1
+Got it. Got it. That makes sense. Okay, so, so, so that makes sense. Now when you get that list, tell me about the work from there to landing the interview.
+Speaker: 0
+Okay, so in many cases, listing either CSV or something, if it's not from opport direct, um, you know, you have the list there, you can send the messages from Opport. Um, you see the clicks, you see what else, how it's conversing without or subscribing and stuff like that. I personally, if I send those, maybe when it comes to like reminders or nudges, I do like it. I do one-on-one. I'll go in my direct inbox and actually like one-on-one send messages to people for a personnel touch. Especially if it's not like a long list. When I say that this person probably clicked my email, they probably indicated interest that they want to participate in discussion with me, I'll probably, you know, get on a one-on-one email and do that and personalize it and give you some touch and probably even look at some of the events in their organization that I can use as a leverage so that I get personal.
+Speaker: 0
+And sometimes I'll just talk to the CS team like, okay, I've sent x, Y, Z users, this email, this person, this person in this organization kind of look like they open my email. There might be some interest. Are you on a support call with them at any time? Can I join or I have a bunch of things, can you help me? So from the first email, it's now discretion and common sense. Yeah. But then same thing mixed by, if I get like the CSV or the email list out, I go out to put it up, put the user interviews. If I see that they probably clicked or they didn't continue, I'll do the same thing I do personal one-on-one, look at CS team, look at, have these people churn? Are they paying? Be like, whoa, that leverages can I use to like reach out to them in an avenue that already exists or something? That's what will happen. Does
+Speaker: 1
+That help? Yeah. So what I am hearing you say is the number of people that you're trying to reach is not that significant. That for you, for you to reach out to them one by one. Like it's not like you're reaching 200 people at once and seeing maybe 10 people booked the interview. Is that, is that what it is?
+Speaker: 0
+If I reach out to 10 people, I, I mean I'm reaching out to hundred or 200 people at once and I shouldn't, let's start from there, in my opinion.
+Speaker: 1
+So how do you reach 200 people at once?
+Speaker: 0
+So like I'm saying, if I get an email list from panelo, I can get up to 200 people at once from, or if you what?
+Speaker: 1
+How are you contacting them at once?
+Speaker: 0
+Like sending an email to them on HubSpot or user interviews. I dunno what you mean. Right.
+Speaker: 1
+So you, you, so do you go into HubSpot, upload that email list and just say send, is that what you do?
+Speaker: 0
+Yeah. Or interviews. Like put their emails there, draft the email, put the link for whatever, you know, you
+Speaker: 1
+Understand?
+Speaker: 0
+Yeah, yeah. Like for like an initial thing and then subsequently whichever ones show like an interest.
+Speaker: 1
+Got it.
+Speaker: 0
+Those are the ones and I'll do like maybe one-on-ones and say okay, there's an interest in this. But that's what I'm saying. Even the 200 people in the first place, I don't even think sometimes that's just like shooting your shots. That's cause yeah, if I talk that 1, 2, 3, 4, 5, 7, 9, 10 people in these organizations are the bright people to speak to. I shouldn't be sending emails to two people. I should just be having like those. Yeah.
+Speaker: 1
+Yeah. But are these people usually like these are your customers, right? All these 200 people are your
+Speaker: 0
+Customers. Yeah. Yeah. Like our
+Speaker: 1
+Users. Right. Um, okay, that, that makes a lot of sense. So, so user interviews also has this like scheduling feature that once you email them then they can book through automatically booking your calendar so that Yeah.
+Speaker: 0
+Yeah. You can put like survey there as a pre-screening if they fit. You know he has the whole thing.
+Speaker: 1
+He has all that stuff. Yeah.
+Speaker: 0
+Yeah. Okay. So, and it doesn't have to be something that, it doesn't have to be something that is on user. Cause we use our interview, you can actually do like survey, you don't have to have a survey on user interview to use user interview to get people to do stuff. You understand?
+Speaker: 1
+Mm-hmm. <affirmative>.
+Speaker: 0
+Yeah.
+Speaker: 1
+Can you come again with that? I can get that.
+Speaker: 0
+Like, so we use our interviews, you can do surveys, right?
+Speaker: 1
+Yes.
+Speaker: 0
+Like you can put a list there and then tell those people to take a survey.
+Speaker: 1
+That's even your own customers, right? Yeah,
+Speaker: 0
+Yeah, yeah, yeah. Have to be. It's just like I want to message them to do blah blah. Like I want to have a call which you, you can still put your list and not do a survey and email. Yeah.
+Speaker: 1
+So I would imagine there's a link in that email that takes them to the survey and after completing the survey, let's say they match the criteria to book the meeting, send them another email to book the meeting or IT automation.
+Speaker: 0
+Oh it does all of that. It does debit criteria. It's auto. You can set it to say automatically it's automatically book. You see it on your calendar.
+Speaker: 1
+Ok.
+Speaker: 0
+Yeah. Yeah. So that's not even the only issue. Discover that. Why does this thing my Google account that's logistic
+Speaker: 1
+Got it, got it. Google it. Kind sing. Do you also tell it, oh these the parts you need to, you are available for two hours here, two hours.
+Speaker: 0
+Nah, I like your cal. You does all of that, your calendar. Even if it's you and somebody else that wants to be on the interview, like myself and my designer many times. So we can, our calendars and it's look availability on both of those calendar slots and those are the times that to make available. It does all of that if you've completed the interview. And maybe because we also use it as an incentive, which is primarily why I use interviews. You can decide on incentive if you completed the interview at that time it'll say, oh I was your interview. And you can check and say don't. And it's automatically petty. Like he's very hands off.
+Speaker: 1
+Yeah.
+Speaker: 0
+Yeah.
+Speaker: 1
+Alright. Sounds good. Um, I think, so here's what we are imagining for the experience. Um, we know that, you know, people already have a way of doing some of this. These people have different hacks and different ways that they used to set up interviews. Um, some people use certain tools like you are using, you know, go between Google calendar and you know what you have some people use Calendly with Google Sheets and you know, different things that we stitch together to make this work. Yeah. What we wanna provide is a solution that helps you deal with this end-to-end and then provide the historical reference for all these things that you're doing. So you book time with someone last week or last month, you can see it as a times stamp. It tells you who's chatted with them, it tells you what they said, um, in, in the app as well.
+Speaker: 1
+Um, and so we're looking at a user section. I just don't have access to the Figma now I've showed it to you. But there's gonna be a user section. There are gonna be like three parts of that. So there's gonna be the dashboard which kind of gives you like a place where you can see the activity feed of oh other PMs charted with this person last month. Or these are the recent customers we spoke to. These are their findings. High level, oh see us chat with this person. And then you can also have maybe widgets that you have perceived. So let's say you were doing an analysis on some of the users and saying give me segments. Use AI to ask gimme segments of, you know, people are having this data and tells you and then you can save that widgets, your dashboard. Um, and then we have like, uh, another area called like accounts. And that accounts is where you go and see the customers themselves, the all the customers you have. So how, how many customers or Zen Hope have like organizations like range
+Speaker: 0
+Organizations right now? Uh, we have about 2000 plus.
+Speaker: 1
+Not now. Just all. All.
+Speaker: 0
+Yeah. Yeah. We're way more than that. Cause right now this current almost like 8,000.
+Speaker: 1
+So, so you into com, the accounts, you see 2000 accounts and every user within their accounts and their profilers, like based on you putting data of course. So you can say, okay, we have seven users at company B and these are all the times we spoke with them or these are the interviews we had. Um, this is what they said last, you can have to fill, get a pulse of where the conversation is with that customer. Um, and then we have a, they were looking at a scheduling feature where you can then configure all the scheduling to say okay, I only chat with five customers who look like this person. And you can pull that out from the database over time. Um, so just wanted to gimme a sense of like how we're thinking about an experience for you to manage users from me. Oh, I wanna get feedback, I wanna talk to users. Um, perspective.
+Speaker: 0
+So what I think about that is this we have, because I know we, one thing that we here do not like is tools.
+Speaker: 1
+Mm-hmm. <affirmative>.
+Speaker: 0
+And we've begin to, we're trying to find out that some of, a lot of these tools, they're overlap. Marketing has colonized export. Sometimes product comes and say okay, how to use TopSpot. <laugh> sales is using Salesforce, <laugh> customer success is using fresh success. Everything you described now in our last month I was on opport making sure that this organization, I can see what is called Z, why I call Z, which is an identity of the company in our Yeah,
+Speaker: 1
+Yeah, yeah.
+Speaker: 0
+On I'm going to use, I make sure now is just use a based. So we kind of have that representation of some form of hierarchy first success Cs to us they like, okay, these are how the trials, these are how the users, how the notes else call all those English stuff. So I think the part of what you describe as seen all your organization and all the users in them in some way, shape or form, you kind of have like that in three different places. Mm-hmm. Well of course we think consistencies because one is pulling data from Stripe, the other is pulling data from the database. Yeah, yeah. There is in some way, shape or form that exists. Even though our problem now is in fact we've said sales queue your sales force come to opport, let everybody be looking at the same thing. Mm-hmm. <affirmative>
+Speaker: 0
+The other angle of now saying, I want to talk to users who look like this is what sounds interesting. And just in my own opinion, I'm not sure like that would be a compliment because many organizations have already have one form of like, this is how we organize us. We know that we see this org and we see the people that are in the is in databases. So most tools will pull it out. But this part where it becomes tricky, these are, that fits this pattern. It might be AI that say these are, that fits this pattern across all this organization. That's the guy I wanna talk to. That's what I,
+Speaker: 1
+Yeah, okay. That makes sense. I, and so, so definitely makes sense. I think the big problem that I'm trying to solve here is a lot of times you are trying to get insights already exist. Yeah. Or, or insights that someone else has collected. But you don't know one, you don't know where it is. Yeah. Um, you don't know who collected it, you don't know where it was stored. You don't know the customer they collected it about. So you're going to talk to the same customer about the same thing again. Mm-hmm. <affirmative>. Right? And so want to create that record for you so that you can know that okay, your order follow pm chat with this person last month and these are the insights they collect collected. So you might not even need you to, the idea this guy will reduce the number of interviews. It's not about just booking interview, I'm making it easy. Sometimes you might not even need an interview. The insights is there, done another interview and collected feedback,
+Speaker: 0
+Which makes sense. But lemme give you another angle to this. Yeah, I agree what you're saying. I'm just trying to make a point the other angle. So where it's kinda like I want to speak to you that fit button, there's also what you're saying is counting on the fact that everybody that speaks is doing these updates. So for example, I know for sure that in our own organization mm-hmm <affirmative>, if onboarding specialist has an onboarding covid customer, I even know that there's a record of it somewhere. Yeah.
+Speaker: 1
+Yeah.
+Speaker: 0
+You understand. So even if I go to that account profile on set,
+Speaker: 1
+Nothing there, nothing.
+Speaker: 0
+I tell, I spoke to this guy last week unless I spoke to, I say I spoke to Sam, like how do I lose, I spoke to this
+Speaker: 1
+Guy,
+Speaker: 0
+That's bad. Some people just get in conversation and there are multiple channels. Some are doing chats, some are just ceo sometimes just say, sees get me on the call with these people and talk to 20 customer this week and find a way to share to the calls CEO will do this best to send data on the Google Drive link of videos. But outside of that link, there's no record that this conversation ever happened for me to say, my team spoke with this person. That's where it becomes, I've got, I told you, I've gotten an email from a user before that we keep spamming them with emails. Zero. I went to check the account, they had an open ticket for 14 days and everybody has spoken to that customer in that 14 about everything bought that support tickets, no record until the user told me. So how do we fix that with all our tools? Because we know all these people, we know how people in the organization, everybody's having the I I'm like, I'm not talking to people anymore unless I don't know because I'm traumatized, man cost my father. So how do we make sure that everybody in an organization kind of uses these tools The way I describing? Is it bigger? Yeah.
+Speaker: 1
+Yeah.
+Speaker: 0
+I dunno.
+Speaker: 1
+Yeah, no, no, that, that makes sense. I think some of these things I, I think we'll need to like figure out what we can solve today and figure out the things that will happen long term.
+Speaker: 0
+Yeah.
+Speaker: 1
+Um, first part of it is culture. So like, does a company have the culture of, you know, keeping data, storing data, making it data, you know, accessible to other people? Yeah. But then the long term solution will be, the ideal solution is let's automate that whole process. Yeah. Right from the call we capture the video, we transcribing, we do everything from there automated. Um, so that's something that we're gonna launch later in the year where on the call right from the call, we're capturing the video for you and we're doing the transcript. So it's attached to the user's profile and as long as their email their, their name is there, we have captured the data that we will use to map the insight them and it, and organize it in the database. So all that can move all the manual nature of that. But of course it's gonna take some time to build that. So, um, that's where this is going. Um, yeah,
+Speaker: 0
+Yeah. I think it's, I think it's possible, but I i it, I think it's just largely behavioral. I, if I recall even user interviews, when you have those calls with the customers, the video is attached to the, if I recall correctly, is attached. But you know, some of those things I notice that people opt out of some of those things. Mm-hmm. Just
+Speaker: 1
+Yeah.
+Speaker: 0
+Opt Yeah. Understand. It's kinda like, I mean, yeah, it's just me and this guy. People do. And so that's why I think it's cultural and behavior for people to actually make sure that Yeah,
+Speaker: 1
+It's, it's tood. Yeah, yeah. No, absolutely. It's two-sided. And if you can, if they opt out and the, and the culture will catch the other part, which is the user just gonna put a note, at least they can take notes, right? They'll take notes and go attach the notes to the interview, uh, to the profile. You understand? So it's, it's not one thing. You can't say one thing, it's gonna solve everything. It's, it's gonna be like a combination of things. But yeah. This, this, thank you so much. This, this looks good. I think,
+Speaker: 0
+Um, so if I, you're still trying to look at the scheduling, post scheduling aspect of this problem, right?
+Speaker: 1
+Yeah, yeah, yeah. We're looking at the scheduling and then pushed. Exactly. So push scheduling is, you've done the interview, what happens next? Where's the data? How do you keep track of who talked to who? Yes. How do you make sure that the same email is not going to the same account? Because if you agree that this is one tool want to use to share interviews, then all the emails going out are tracked and you can say, okay, this is the last time we emailed. This person is a, it's a filter there. Don't email someone that was emailed within the last 30 days. It's simple. That takes care of, oh, we don't want to be talking to the same customer. It's like, we need to give people this flexibility to control that experience, but it's not possible today. Um, yeah.
+Speaker: 0
+Anyway. Sounds good.
+Speaker: 1
+Yeah. Yeah. Alright. We, we'll be in touch, I think, um, yeah, if there's any other like feedback, any other questions, we'll definitely reach out. We'll need to figure out where to start to solve the problem for We can't solve the whole problem. Yeah. We'll trying to see, okay. What.

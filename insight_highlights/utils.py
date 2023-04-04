@@ -8,7 +8,7 @@ import docx2txt
 
 import streamlit as st
 
-from prompts import query, i_user_prompt, STUFF_PROMPT
+from prompts import i_user_prompt, query, STUFF_PROMPT, user_prompt_2, query_for_tags, user_prompt_1, user_prompt_for_tags
 from io import BytesIO
 from typing import Any, Dict, List, Optional
 
@@ -423,13 +423,13 @@ def clean_doc(text, user_prompt):
     return response.choices[0]['message']['content']
 
 
-def process_response(response, sources):
+def process_response(response, tags):
 
     match = re.search(r"{(.|\n)*}", response)
     if match:
         result = eval(match.group())
         topics = list(result.keys())
-        categories = ["Pain Points", "Desires", "Behaviour"]
+        categories = [' '.join([_tag.capitalize() for _tag in tag.split(' ')]) for tag in tags]
 
         for topic in topics:
             sentiment_count = sum([
@@ -442,7 +442,7 @@ def process_response(response, sources):
         return {'data': result}
 
 
-def get_result(doc):
+def get_result(doc, tags):
     docs = text_to_docs(doc)
     index = embed_docs(docs)
     time.sleep(2)
@@ -456,10 +456,11 @@ def get_result(doc):
     text = answer['output_text']
     response = extract_insights(text, i_user_prompt(source_ref))
 
-    return process_response(response, sources)
+    return source_ref, process_response(response, tags)
 
 
-def get_prompted_result(doc, prompt):
+def get_prompted_result(doc, tags):
+    query = query_for_tags(tags)
     docs = text_to_docs(doc)
     index = embed_docs(docs)
     time.sleep(2)
@@ -468,7 +469,8 @@ def get_prompted_result(doc, prompt):
         source.metadata['source']: source.page_content
         for source in sources
     }
+    prompt = user_prompt_for_tags(tags) + user_prompt_2(source_ref)
     text = get_answer(sources, query)['output_text']
     response = extract_insights(text, prompt)
 
-    return source_ref, process_response(response, sources)
+    return source_ref, process_response(response, tags)

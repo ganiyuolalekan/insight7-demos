@@ -1,0 +1,262 @@
+Speaker: 1
+Um, what do I find challenging in building,
+Speaker: 0
+In understanding the users?
+Speaker: 1
+Yeah, the users. Um, I think number one would be being able to ask the right questions depending on the kind of products I am I am working on at a time. Um, a lot of the times, like we know users don't necessarily know what they want. Very few of them actually know what they want, and more often than not, when they know what they want, they're thinking about it short term, right? So being able to go two or three levels deep to be able to understand what exactly is their problem and then try to extract that to be able to make business decision is really the major problem for me as a pm. So I need to do more proper research before the interview. And then during the interview maybe I'm having like a customer validation session. I try to ask multiple questions to understand what exactly are their major challenges, and then just look at it long term and see the multiple layers that, that particular solution that I might potentially come up with, what particular aspect of the product it would cover. So try to understand what exactly it's they want and try to look at it long term.
+Speaker: 0
+So I mean, that's that. Thanks for that feedback. But when you look at, when you're talking about long term, um, do you have a conflict of interest between, um, how much or when your product's about to ship and how much your customers are really excited about what they really want for themselves about the product? I don't know if you get the, so basically do you have that conflict of interest in trying to gather that we said, and you think there's some time constraints that puts you in a bind? For example, you have this particular customer, this is what they want, this is want to shut them, but we are thinking medium term or long term, are we really gonna solve this exact problem within the timeframe of what the customer wants? I dunno if you have that kind of conflict of interest.
+Speaker: 1
+Um, so sometimes we do, or should I say sometimes I do. And I think for me, I've moved around a couple of times and I've been in companies where, or I've worked on products that we need to roll out real quick. And then I've worked in other organizations where I have long term, like I live, I have like a runway to be able to like six months of discovery and all of that. So depending on where I find myself, um, for a situation where I need to make a quick decision and have like a direct impact, um, it's usually, um, it's usually boils down to how I go through the process of extracting information from my users. Right? So more recently I was telling Ordon for example, um, there's a tool I recently found out about called Product Board. I haven't used it before in my experience.
+Speaker: 1
+And I think that tool is simply amazing. So, um, right now, now the product I'm working on is product board helped me, helps me in gathering that inform multiple information, multiple insights over a period of time. And then I, I, it makes it much more easier to be able to make specific decision because in the last nine months, multiple insights has been gathered, right? So prior to using a tool like product board, um, I am always caught in between. So what, how exactly should I prioritize? What exactly should I do and how exactly would that affect the business, shut them and long term? And does this necessarily satisfy this customer base? Right? But a tool like product board has gathered insights for me like nine to 12 months in the past and then I can stack up multiple things and then I can make a business decision real quick because I see historical information telling me that users have this problem. You understand? So it depends on the kind of product I'm working on and it depends on the company and the type of tools they use. So sometimes I find that problem existence in a company like Terragon, well, when I used to work, when this part of the world, the other tools are available to me that helped me make decisions quick and helps me achieve quick wins in short term. I dunno if that answers your question.
+Speaker: 0
+Yeah, yeah. But I mean, before I delve into the next phase of my question Yeah, I understand. Yeah. Product board really helps and I can understand the big picture of product board, but if for example, you have the historical data and they revolve around specific problems or specific strategic buckets of problems or value, value propositions mm-hmm.
+Speaker: 1
+<affirmative>,
+Speaker: 0
+How do you delineate, for example, you have a new, new, new customer insight mm-hmm. <affirmative>, uh, of two new customer insights. Would those come under new information or they just add on to existing buckets that you've grouped using product board in the past? I mean, how do you filter, um, new information that's not so, that is not duplicated at
+Speaker: 1
+Some point? Yeah. Yeah. So the way I use product board right now, or the way I um, the tool has helped me in prioritizing is I create different aspects of the product I work on. So let's say we have a huge product and there are like five verticals, multiple insights comes in to me as a pm and then based on my understanding of their problem, I categorize each of those problem into one of those five buckets, right? And I do this on a week by week basis. Yes, it's tedious. Um, it's something I feel should be automated, but, you know, the way our users are, they don't necessarily explain the problem the best way possible. They, like I said, they don't look at it short term. So I find myself once a week creating, like associating each problem statement or each issue submitted by a user. I'm putting it into one of those five buckets and that basically bubbles up over a period of time and it helps me prioritize subconsciously, right? So that's the way I've been able to organize the problems statement that come from users in the last few months.
+Speaker: 0
+Ok. Yeah, thanks a lot for that. Um, um, so when you capture data from interviews, um, what do you do with data? The run, right? I know you use that to advise your, your, your comp, your advice, product advice develop, but I need to just have an idea of Yeah. Do you,
+Speaker: 2
+Yeah. Lemme jump, lemme jump in with a quick question. Um, so the two things, one is like you, you're talking about your current, you know, experience where you use product board. So do you do customer interviews? Do you get, like do you, do you do interviews with those customers to really understand in depth the problem that we have because they might not express it the right way, like you said. Correct. Do you do that?
+Speaker: 1
+Correct, yeah. So, um, I had a customer interview on Friday, right? And the reason why I actually had that interview was because one of the key features that have been requested for multiple times that uh, product board has helped me identify, um, I felt it was time for us to prioritize it for q2, but the question is how we be much more specific in understanding this problem and how in what direction should we be going. Then myself and my designer came up with a few people that we think we should talk to and then interview them. Uh, so I did something similar like that on Friday and then we started digging deep into the different customers to understand their different pinpoint and started making sense of the multiple inci loops submitted in the last six months. So yes, I do customer interviews alongside.
+Speaker: 2
+Thank you. That, that's, that's great. Now, just to I, I'll pass back to John. So let, we wanna connect that piece of understanding those, that's what this interview is about. Connect that piece of understanding who those customers are
+Speaker: 1
+Yeah. And
+Speaker: 2
+Having a way to like, you know, yeah. One, understand the gaps in that process. So lemme pass them back to John, the gaps in that process. What are the pain points associated with you? Understand, you know, things about them.
+Speaker: 0
+I'm gonna like continue from where I, what was saying in terms of data about these customers, how do you categorize the personalities, what they do, where they work their roles? Yeah. And attaching them or filtering them, mapping them to those insights. So apparently is there a way, oh, you got customer, these are experts, and then from this, these are the kinds of questions, these experts or these are the kinds of data Yeah. Uh, related to experts or, and is there a way to categorize them based on where they work, what they do, their role, so their personalities, right.
+Speaker: 1
+So all of that, all of that is still very manual for the company I work for now. Right. Okay. It's still very manual. So, um, let, lemme just walk you through like what, what it was before Friday, what we did on Friday and what I'll be doing in the next few weeks. Right. So product bot helps to be solving the before Friday problem, which is we have multiple insights, we have them stack ranked and they bubble up, right? The next step is I want to understand this problem much more specifically. Then I start bringing out a few, you know, customers I think I should talk to extracting those customers still manual. So who exactly do I talk to out of these 70 customers that complained about this number of things? And then I start searching based on the account type, based on the billing type, based on, you know, our relationship, our conversation and all of that.
+Speaker: 1
+And then we have an interview, um, typically five to seven questions will be asked for a 30 minute interview, but how do I get those questions? Um, so I have like a question bank that I, I can extract questions from and say, you know what? I want to ask them these questions to understand more. And once the interview process is done, then another level of manual analysis is also done, right? So I want to know, okay, based on what this guy said, is this what she was actually referring to? How do I cross reference customer is explanation of the problem with customer B's explanation of the problem. So I do all of that manually and then I create like a one page document trying to explain my own understanding. On the flip side, the designer I typically have my interviews with do something similar. And then we have a conversation maybe after like two weeks to say, okay, do we understand this problem now If yes, good to go, if no, we interview more customers. And if yes is the answer, then we start building our requirements, project dog PRDs and all of that. So that's how we go typically. But for the particular area you're looking at, there's still a lot of manual process thinking about how to understand the problem and you know, being much more specific.
+Speaker: 0
+Mm-hmm. Right. So basically you from all the data you get use that for continuous improvement basically
+Speaker: 1
+Of the problem. Exactly, exactly. Do you,
+Speaker: 0
+How do you get back, how do you get back to the customers complain about the problem? Is it by three nine, um, in a new version of a product? Or you get back to them specifically to answer that particular, I mean like,
+Speaker: 1
+So, so, um, the, the software we use, like, like I said, product board, these guys submit request and depending on the relationship they have with us, um, as a product team, they, which are hating me, like, what's up with these requirements that we ask you guys to build this like one month ago, blah, blah, blah. And then maybe luckily for a few of them we decide to work on the feature maybe after three or four sprints we release it to production and they see it, we basically need to reach out to them via email to say, you know what? This stuff you've been asking for, it's good to go test it out. For some people, we could decide to go through a process of like a, a better testing phase where we have a selected, you know, number of users who test what we are releasing. And then eventually as they use it, they tend to give us feedback, oh okay, this is good, uh, but I think you can make it five or six steps better. Or this is all that we need, or this is totally different from what we wanted, but it is from the better phase we're getting feedback to maybe the production stage and then we consistently on that particular feature functionality.
+Speaker: 0
+Cool. Cool. Um, basically, um, I think you mentioned that you store data manually, basically.
+Speaker: 1
+Um, um, yeah.
+Speaker: 0
+Okay. Uh, <laugh>, although I think I've existed my list of questions. I dunno if you have, um, I think this was really interesting. I I really got some valid valid, um, yeah,
+Speaker: 2
+I can jump in. Yeah, so, so first is like, tell me, I think we need to like deploy is e immediately in your company <laugh> doing an automated way to do it, right? So, so lemme lemme show you like a quick demo and then, you know, we could check in on a few things again.
+Speaker: 1
+Yeah.
+Speaker: 2
+What we're trying to solve for is this idea of my screen
+Speaker: 1
+Just now. Yeah,
+Speaker: 2
+Yeah. So what we're trying to solve for is this concept of that whole manual process by which you get to know the customers and get to get insights about them and their workflow, um right. And the issues that they have. So we're trying to give you a better workflow for managing that. So, um, this part of the app, I mean we're still prototyping, so we're just trying to understand what exactly the customers want to see. There are two pieces of solution. One is just having a database where you can track all the customers and all the insights or Yeah. Like you've collected about them and you can actually like interviewing history. Oh, we talked to these customers. Um, how many PMs are on, on your, on your team?
+Speaker: 1
+Um, we're about nine,
+Speaker: 2
+9:00 PM Wow. So imagine that some other PM had collected feedback two months ago. Yeah. Around the same, maybe a customer just mentioned it in an interview, there's no way you're gonna know or you are trying to talk to the same person that someone talked to last two weeks ago. Right? And that becomes an issue because um, you are talking to the same customers limiting the kind of feedback you're collecting and customers also don't wanna be contacted that frequently. And so that visibility into what's going on in the accounts, who you're talking to, who are getting feedback is what we're trying to solve here. Um, if you don't mind me asking as well, like how many customers, like don't gimme, you can gimme a range. Like how many customers, you know, are you guys serving?
+Speaker: 1
+Um, how many customers? So I think it's about, so active customers, because I work for a startup, it's about 2000 customers paying customers. Um, and then those customers have multiple properties that they manage. So I work for a, um, a, how do I explain it? <laugh>. So I, I recently joined the company, it's a startup and what we do really is we have a platform that helps automate the operational aspects of short-term rentals. So the way you have Airbnb, um, when you're done with your short-term rental, you have cleaners who come to the apartment basically clean and make sure that it is ready to use for the next, you know, guest. So we built a software that basically help automate the operational aspect of cleaning, maintenance, and inspection. So we have about 2000 customers, but each of those customers can have properties they manage between one property to 10,000 properties.
+Speaker: 2
+Wow.
+Speaker: 1
+Yeah. Wow.
+Speaker: 2
+Yeah. And those customers are they businesses do, do you see them as businesses?
+Speaker: 1
+All
+Speaker: 2
+Clients? They're a B2B company. Alright. Right. Um, alright, so, so the idea is you get the transparency into like those businesses here, uh, how many employees, you know, what's the industry location, whatever revenue. And that informs like you in terms of like who do you talk to? Let's say you want a book interview.
+Speaker: 1
+Yeah.
+Speaker: 2
+Um, and um, you are able to see the activity history of each of your account and the users as well. Like who are the end users of your software, who you are having this uh, conversations with, right? And you can use that then and say Okay, I think my colleague captured some data from this account, you know, last month, what ex before you go into your interview, what exactly did they say? Um, or even see what they've said over the last, you can quickly summarize what they say over the last six months. Do they have a similar issue? Can I even capture that data before I go into this interview? Um, right When the future, where this is going is we also want to help you like automate that whole process of scheduling the interviews, figuring out how to talk to that process so that we wanna talk to five customers on the project.
+Speaker: 2
+You just go into the tool, go into IS seven and say, Hey, I wanna talk to this kind of user, you know, this employee size, you know this, just put a set of criteria and if you already build that CRM and put the emails and profiles of those customers, it'll just automate the process. You just get the invites into your calendar book. Um, okay. Is where this is going. But right now we're starting okay. Crm. So I think the first thing, what would be useful is in seeing this, what we're trying to do here, what immediate pinpoint do you think we need to solve first for you today? Start using today, what features would you want? Do you need badly?
+Speaker: 1
+So, so maybe lemme
+Speaker: 2
+Do you even find this useful before
+Speaker: 1
+<laugh>?
+Speaker: 1
+So, so let lemme explain to you problem that would give you an answer to that question you just asked me, right? Yeah. So I, I have someone on, on like the product team who dropped the message on Slack and say, you know what, hey guys, I want to talk to client A um, I want to talk to them about this new feature, but I want to understand if we have had a prior conversation with this client, right? And then in five minutes, one of the older PMs within the company said, you know what, actually I used to manage this client a couple of years ago. I have a good relationship and this is what we've talked about in the past. This is a summary, let us jump on the call. And then she had to literally explain to um, the PM that this was their prior conversation.
+Speaker: 1
+He took notes and then he took those notes to have those meetings and then after that conversation he went back to the Slack channel saying, you know what? Thank you to Kelsey for her helping me with this. But the problem is for me as a third pm I, I don't know the conversation Kelsey had with the client before. Neither do I know the conversation that Tim had last week, right? So as a 12:00 PM I'm still left in limbo, right? So to answer your question, yes there's a problem that's inside seven is gonna solve for somebody like me. Um, how we currently do it is I basically just manually talk to people and say, you know what, these are the list of clients I want to talk to. What do you think? And someone, I'm not sure, okay, I spoke to this person before. Oh okay I think you should speak to this pm this PM spoke.
+Speaker: 1
+So the organization is not there, right? Um, the best you can have is have like a notion document because we use Notion, right? Is to have like a summary of what this person discussed about but it's typed out and it's also dependent on integrity of who is typing it out. I would trust like a director's conversation over like an associate PM for example, right? So there's a problem in size seven is definitely going to be solving for people like myself. Um, but one pushback that I see or how I sometimes solve this existing problem is aside from talking to people or reading notion documents, um, there are some other conversations that happen with clients through the sales team. So I dunno if you're familiar with Gong, there's a software called Gong that is um, the sales team uses and that was what I was just checking on this my other screen.
+Speaker: 1
+And within Gong aside from the video, you also have a transcript. Yeah. Right? But I'm not sure how Deep Gong has gone for them to have like a summarized version of that right. Of that transcript. So if there is something there, maybe you guys can do some research that would probably be like a potential challenge for someone to be able to sell inside seven to like a team. But if Gong doesn't do that for a pm this is definitely solving something for us. I would rather have like a summarized version of the conversation than having to look for which PM spoke to which client and what when was the conversation and all of that.
+Speaker: 2
+Yeah. Yeah. Good point. I think, uh, just to counter that, um, yes, the sales team using Gong and automat the process Yeah. But use as a pm you still need those conversations, right? So what if you wanna refer to the actual data and not even the summary, you just want the call, like you want the exact video you wanna go right. So you don't have to do it again. Yeah. Um, the companies, I pay people $20, $50 for every conversation and I was talking to a PM and it was telling me how um, some customers who just want to do interviews multiple times cause they're getting paid whereas
+Speaker: 2
+Has been captured all the time. Yeah. Um, and so in terms of the PM spending their times efficiently terms of circulating data across an organization, I think there are multiple benefits. Um, right. So we can establish that there's a problem here. Yeah. Um, what, what would you like to see in terms of a v1? Like what would you, lemme maybe that's not the right question. Yeah. What, what is the biggest pay? So we're not shipping out the scheduling piece yet, so you'll not be able to like automate scheduling right now it's just, hey, as we're doing interviews, what we're gonna enable you do is as the data is coming in about the transcript or of the recording, you can put profile information about the user in, there's a popup, you put the profile of the user, then you can your name, your email, or you can, once you start to type the email of the customer, it pulls out their profile from DA database and you attach the documents, right? Right,
+Speaker: 1
+Right.
+Speaker: 2
+And go and start to do things. Like I wanna, I wanna see the personas of a set of gimme like a buyer persona or user persona or segment users for me based on the data they've given us, right?
+Speaker: 1
+Yeah, yeah.
+Speaker: 2
+But what would you say is like the biggest wants to pain points that we should try to solve with like a first version of this?
+Speaker: 1
+Um, so let, lemme list a few things. Maybe two or three things. Yeah. Um, the way, the way I work, the way, the way I would like, the way I would think about this would be, so, and I want to use my current example. So in the events that I want to sell this to anybody, I know how to sell it, right? So I'm a pm I'm in charge of an aspect of a huge product and I'm planning for q2, right? Um, but I have multiple insights from product board and I think it is time for me to speak to specific customers. The first thing is, which of these customers should I be talking to? That's the first problem. I want to know which of these personas would be the best to extract um, information from. So maybe have like a list of, you know, group of people or bucket of people that, you know, simplifies the selection process or the entry criteria for me.
+Speaker: 1
+That's number one. Number two would be, um, I mean the basic stuff, like the type of questions and all of that. But number two would be historical conversation that has happened with this set of customers, right? I want to know if this customer has had a conversation with any of the PMs before and what are the vital information I need to get from it. So it could be bullet points, it could be a couple of paragraphs, you know, just to simplify the conversation. And that way the customer feels as though we have listened to that. I can say, you know, you know, we had a conversation with you like three months ago, this were the things you talked about we're currently working on, however, this is what this, my meeting with you is going to be about. Right. They feel much more listened to that way. And then finally after having that conversation, I want to be able to have like a summarized version of the conversation I had with the person, right? So personal proud conversation and current conversation. Those are the three layers. It now depends on how fast you guys want to go or like the strengths or the requirements to build those three layers. That's what I think I would need to simplify my work right now.
+Speaker: 2
+Nice. Did you say persona as a first? Yes. So that, who should you,
+Speaker: 1
+Who should I
+Speaker: 2
+Talk to? And then what was said before? So the history. Yes. And then summarizes my current conversation. Yes. Yeah. We already have that summarized on you just not started using it. Ok. We already have that. When you have a conversation, you can upload the video transparency. Fantastic. Summarize it. Yeah, do that. Um, so yeah. Yeah, that, that makes a ton of sense. This is the value in building a product for PMs. They can articulate their needs clearly on unlike
+Speaker: 1
+<laugh>
+Speaker: 2
+Users. Right. Okay. That makes a lot of sense. I think. So in terms of that, what, what look at this. Looking at this UI now, you probably wanna come here and do like some filtering to limit. Let's say you have 2000 customers and then you filter based on maybe employee size.
+Speaker: 1
+Yes. What have you. Yes. Yeah. Payment plan and all of that. Yeah.
+Speaker: 2
+Okay. What are those important fields for you to filter by?
+Speaker: 1
+So I want to know in my own, in my, in my current product, I want to know, um, the, the number of properties they, so it can be the number of properties they have. It could be the employee size, like all these are within the same category, number of properties, employee size. Um, so size is one thing of the company. Number two would be the kind of payment plan they're on. I work for a b2b, you know, my prior company to Survey Monkey b2b, right? So payments plan, plan, they're on the most recent conversation they've had with us. Like a dates filter where we can say, okay, these guys, I spoke to them three months or earlier or maybe one year ago. That's the third filter. And then what else, what else, what else From the top of my head, I think those are the, those are the three core things. So dates, company size, and then the payments plan they are on.
+Speaker: 2
+Got it. That makes sense. Yeah.
+Speaker: 1
+Um,
+Speaker: 2
+Not location,
+Speaker: 1
+Um, location. Um, so location for us is not super necessary. Cause Yeah, it's not critical because what we do is, is is done everywhere in the world. Like we have clients in Europe and US in Africa. So it doesn't really matter for us location and,
+Speaker: 2
+And one of their role in the company
+Speaker: 1
+For sure. I need to know. So it's probably be part of their personnel as well. Like I was talking to the head of operations on Friday, I don't wanna talk to an admin or a supervisor or something. So yes, role is important.
+Speaker: 2
+Got it. But would in your qu in your, you likely get that data sets about your customers today from another tool like maybe analytics tool?
+Speaker: 1
+Yes. Yes. So right now use any super technical popular tool like Mix Panel and all of that. They have something built in-house by the Yeah. By the engineers and am the one pushing for them to get things like Amplitude or
+Speaker: 2
+Got it. Got it. Got it. So you can easily get data from this dataset from that to upload five seven, right? Yes,
+Speaker: 1
+That's, yeah, of
+Speaker: 2
+Course. And then once you have it there, you can say, okay, I just quickly do filters. How easy, easy for you to query that current place? Do you have to reach out to someone to get the data for you? They like
+Speaker: 1
+No, no. It's very simple. Like it's intuitive, like ui very simple.
+Speaker: 2
+So, so you can just go there, do some filters and get the data you
+Speaker: 1
+Need. Yes, yes, yes. So
+Speaker: 2
+What addon will be given if we allow you to common filter here to, to
+Speaker: 1
+Get the data. So cause so for here, once I have it on Insight seven mm-hmm. <affirmative>, I am not only having the personnel I'm having when the last conversation happened and the summary of the conversation. Now I just need to even, I would need to first talk to somebody pm a Yeah, yeah. I want to talk to these clients. Yeah. Uh, what was the last conversation you had? Yeah. Or inside seven should tell me that. Yeah. I don't need to stress myself.
+Speaker: 2
+Yeah, yeah. Got it. Got it. Okay. That, that, that makes a lot of sense. I think there's also the element of the team has to use the tool. Cause if they do the interview, they don't upload it or Yes, we're working on automating the flow of the data into the tool. Yeah. So you use the box, it comes in directly like gong doors. Yeah. Um, right now you have to upload the, the video. So if, if the, if the person doing the interview doesn't do that, we'll not be able to track when the conversation happened.
+Speaker: 1
+Correct.
+Speaker: 2
+But I think that,
+Speaker: 1
+So one thing, like one thing that crossed my mind a few weeks ago, I think your dropped me a message and I said, you know what, the way we use, um, what's the name of this tool hold the one that allows you to record stuff and you have one round stuff on your lower left screen.
+Speaker: 2
+Oh like, um, is it the auto ai
+Speaker: 1
+One? No, no, no, no, no, no. The one that you can basically just create an account and then you record your screen and then you at the lower left corner. Oh,
+Speaker: 2
+Loom,
+Speaker: 1
+Loom Loom. Exactly, exactly. So like you said, for us it would be like a loom. So I have inside seven, I want to have a customer interview. The first thing that comes to mind should be inside seven. Yeah. Right. Because it would help me do some filtering on the type of customer I record from there. Or in maybe at V1 I can upload the video, but the conversation should be able to be transcribed within, um, inside seven, just the way you have gone for the sales team.
+Speaker: 2
+No, absolutely. That's, that's what, that's what we, we've built. Um, we're just making improvements now and I think that you should, you should actually play with it, um, soon so that you can see some of the really exciting stuff I'll show you very quickly, just to wrap up this call, uh, past time. So the new experience we've built now is that you can just coming to the app, we haven't shared this yet, but it's, it's almost ready, right? And just upload like documents. Like that's all you need to do. Now you upload. So if you did two, three interviews, let's say you, you talk to more people for this thing that you're working on now all you need to do is selected documents from your computer. Um, so let's say I select two documents. I select documents, all videos. So this one, um, let me look for another one. Yeah. And then I just created a project. So what's the name of the project that I working on? What, what I trying to solve what you call,
+Speaker: 1
+Uh, automated workflows.
+Speaker: 2
+Automated workflow. Exactly. Then once you click analyze, that's it. You just wait. And in like 30 bomb, you get a link in your email with a dashboard telling you, hey, this is what's going on with data. You cannot then decide to go deeper, uh, open up like, uh, the editor, like the library section where you can then do more. This says look at the transcript, all that stuff, right? But what's gonna happen is you're gonna have this dashboard where it's telling, Hey, these are the key opportunities, these are the key papers points, the summary. We're still working on like a next question on the dashboard. This is what you like, but um, this is where you get, and then all the data goes into your library stored. Okay, I see. Like this.
+Speaker: 1
+So wait, before, before you go into the library, so the dashboard you just showed me, I think I saw it a couple of weeks ago, but yeah, I was not totally clear. So what you're telling me is I have a Zoom call, I have a conversation with my customer, um, I download that video and I come to Insight seven, I upload it and it extracts the most valuable information. I'm breaking down into this dashboard for me.
+Speaker: 2
+Hundred percent.
+Speaker: 1
+Okay. So what's the, how, what's the difference between learning and insights?
+Speaker: 2
+Yeah, good question. This learning is like the summary, um, just summary here there of whatever is going on with data. So here it was funny enough interview, okay, so this is like sample data set, but if you look at the tablet, okay, um, booking continuous slot for customers to, you know, book interviews, stuff like that. Yeah. The king site is the key pieces of formation, the data, and that comes to sentiment. So positive, right?
+Speaker: 1
+Okay. Sentiment analysis.
+Speaker: 2
+Yeah. And then grades like neutral and then opportunities is like what are the themes in the data? Um, the, here the data's talking about automated interview, scheduling, syntheses of customer interviews, ability with customers while you have talking about this is exactly what you said just now.
+Speaker: 1
+Yeah.
+Speaker: 2
+Um, so once you start to see that, so imagine I put your own interview with another, you know, person I talked to. You start to see, you start to tell you, hey, two people said this. That's what, that's what was gonna start to happen very soon, right? And keep the data right.
+Speaker: 1
+Right. So, so where, I mean this, this, this looks amazing. Um, and I'll talk like a typical Nigerian and I'll try to be as pessimistic as possible. Yeah. So learning, learning for me, yeah. I believe, yeah. Um, the, the one to the right where you have the multiple grids, um, what yeah, insights. So we do something similar like this in Survey Monkey where you like do sentimental analysis and
+Speaker: 2
+Yeah.
+Speaker: 1
+Then the keywords, yeah, that's also possible. But for me, opportunities, I don't want to believe it. I'm like, no, I need to fact check
+Speaker: 2
+What's exactly
+Speaker: 1
+You're selling me. So this is where you need to sell it to me to be sure that the interview that I just uploaded don't by pm y these are the opportunities that truly were extracted from it.
+Speaker: 2
+No,
+Speaker: 1
+A hundred percent. So how do you do that?
+Speaker: 2
+No, no, that's a, that's a brilliant question. I will be getting feedback on that one as well. Uh, we're working on, like I mentioned, we're working on the next version of the dashboard. I don't know, can you see my
+Speaker: 1
+Screen? Yes, I can.
+Speaker: 2
+Okay. What do you see?
+Speaker: 1
+Um, I can see our meeting. Yeah, just,
+Speaker: 2
+Okay, I'm trying to like show you something else. Sorry, just one sec.
+Speaker: 1
+If you can kill that, that will be freaking
+Speaker: 2
+New like dashboard, um, based on feedback. So a lot of, you're not, this is, this is not like Nigerian, it's a lot of users have been asking for the evidence. Like what, where is this insight coming from? Show me
+Speaker: 1
+The evidence. Exactly, exactly
+Speaker: 2
+What we're doing now. We're solving that problem of extracting the highlights as well from the data and mapping it to like the insights that we're saying, Hey, this is what happens, this is what they said. So the automated interview scheduling, it's gonna show you exactly where it showed up in the transcript and a video as well is what we're trying to build.
+Speaker: 1
+Oh. So extract section,
+Speaker: 2
+Section for you and say, Hey, this is the thing. Understand these problems, I have problems for we're gonna solve these things in the next few
+Speaker: 1
+Weeks. That would be Miles, that would be miles. I think that would be it for me. <laugh>, that would be it. Yeah, yeah, yeah, yeah, yeah. Like it just is basically simplifies my work because I don't have to go through like a five pager document or like a notion doc that I'll try to understand what exactly it's, I wanna extract from this. So the opportunity aspect simplifies it like crazy for me as a pm.
+Speaker: 2
+Yeah. Yeah. So that's like the big piece that we're trying to solve now. Trying to get this thing to show properly. Uh,
+Speaker: 1
+It doesn't have to look, doesn't have to look super pretty. Yeah.
+Speaker: 2
+So, so this is like the project. That's what I just showed you, you know, that one was full of text.
+Speaker: 1
+Yeah. What,
+Speaker: 2
+What feedback on is people want to see like visual, more visual representation of the, of the insight. So we're turning that ative data into quantitative insights. So you need to see charts. So you're gonna see the opportunity like this, hey, if you put five videos, three people said this and this is why. It's number one opportunity in that dataset. Right? Um, and then you over time, of course as we capture data, you start the trends and then like topic, but everything's gonna go visual. And then once you think any of this, as it then pops, you like the highlights.
+Speaker: 1
+Okay.
+Speaker: 2
+Text or video, whatever format is available, say, Hey, this is where we got this data from. So that's kinda like shipping next.
+Speaker: 1
+Okay. Okay. I think this is really good. Um, a lot of us, a lot of us like to learn or consume information through visuals. So, um, it's the way engineers like bullet points, those gimme the requirements, bullet points. So for us, you know, visuals really help and like if you can cue these opportunity parts, um, I think you are just going to be saving the lives of a lot of PMs. To be honest. Igo looks like superstars, <laugh>.
+Speaker: 2
+Right,
+Speaker: 1
+Right, right. I'm going into a meeting talking about the number of people I've spoken to, you know, these were the key points I got from that meeting and these are the opportunities and I don't, bam, bam, bam. You know, everyone is happy and I know how to focus on what exactly are we doing in the next few quarters. So, so that work.
+Speaker: 2
+Sweet John? Yes. Let's go and build
+Speaker: 1
+<laugh>. Oh man. Thanks a lot.

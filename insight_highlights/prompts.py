@@ -69,3 +69,52 @@ Also ensure the grammar is corrected and it is easy to read and digest."""
 i_user_prompt = lambda source_ref: user_prompt_1 + user_prompt_2(source_ref)
 
 clean_document_prompt = """Given the following text, perform grammar correction on the text"""
+
+points = lambda tags: (', '.join(tags[:-1]) + ' and ' + tags[-1]).lower()
+def json_points(tags):
+    last_tag = tags[-1]
+    result = """{
+    "<topic name 1>": {
+        """
+    for tag in tags:
+        if tag == last_tag:
+            result += f""""{' '.join([_tag.capitalize() for _tag in tag.split(' ')])}": [
+                ["<point>", "<point source>"],
+                ...
+            ],
+        """
+        else:
+            result += f""""{' '.join([_tag.capitalize() for _tag in tag.split(' ')])}": [
+                ["<point>", "<point source>"],
+                ...
+            ],
+            """
+
+    result += """},
+    ...,
+}"""
+
+    return result
+
+
+def query_points(tags):
+    result = """"""
+
+    for tag in tags:
+        result += f"""{' '.join([_tag.capitalize() for _tag in tag.split(' ')])}
+<pain point insights> (<source/reference>)
+...
+"""
+
+    return result
+
+
+user_prompt_for_tags = lambda tags: f"""Please analyze the insights report provided and categorize the {points(tags)} into topics/themes. For each topic, please include a descriptive name that reflects the main theme of the category, and group the associated pain points, desires, and behaviors under that topic.
+Please use the following format to organize the results into a JSON format:
+{json_points(tags)}
+Make sure that each pain point, desire, and behavior is associated with the relevant category and that the topics are clearly defined and descriptive of the points they contain. Please also ensure that each point is properly formatted with its source."""
+
+query_for_tags = lambda tags: f"""Please analyze the given document and generate a report that includes {points(tags)}, grouped by category. For each {points(tags)}, please also include the source/reference from the document.
+In the report, please use the following format:
+{query_points(tags)}
+Please ensure that each insight is concise and relevant to the category it belongs to. Also, please provide a brief description of the source/reference to add more context to the insights."""

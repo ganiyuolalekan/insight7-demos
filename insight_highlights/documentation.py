@@ -21,10 +21,10 @@ introduction = """## Insight7 API tester
 
 The following layers are the layers with the API, and they are as follows
 - Transcript Grammar Fine-Tuning Layer. ✅
-- Document Query Layer. ❌
+- Document Query Layer. ✅
 - Prompt Engineering Layer. ✅
     - > **Currently tests just the theme-based API.**
-- Frequency Based Generation Layer. ❌
+- Frequency Based Generation Layer. ✅
 
 > I would be making progressive updates on each layer based on specification.
 """
