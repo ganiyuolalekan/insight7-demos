@@ -27,11 +27,11 @@ Pain Points
 Desires
 <desire insights> (<source/reference>)
 ...
-Behaviors
-<behavior insights> (<source/reference>)
+Behaviours
+<behaviour insights> (<source/reference>)
 ...
 
-Please ensure that each insight is concise and relevant to the category it belongs to. Also, please provide a brief description of the source/reference to add more context to the insights."""
+Please ensure that each insight is concise and relevant to the category it belongs to. Also, please frame the insights to have a tone that communicates to a manager or third party reader, ensuring it is relevant to readers."""
 
 STUFF_PROMPT = PromptTemplate(
     template=template,
@@ -50,7 +50,7 @@ Please use the following format to organize the results into a JSON format:
             ["<point>", "<point source>"],
             ...
         ],
-        "Behaviour": [
+        "Behaviours": [
             ["<point>", "<point source>"],
             ...
         ]
@@ -117,4 +117,4 @@ Make sure that each pain point, desire, and behavior is associated with the rele
 query_for_tags = lambda tags: f"""Please analyze the given document and generate a report that includes {points(tags)}, grouped by category. For each {points(tags)}, please also include the source/reference from the document.
 In the report, please use the following format:
 {query_points(tags)}
-Please ensure that each insight is concise and relevant to the category it belongs to. Also, please provide a brief description of the source/reference to add more context to the insights."""
+Please ensure that each insight is concise and relevant to the category it belongs to. Also, please frame the insights to have a tone that communicates to a manager or third party reader, ensuring it is relevant to readers."""

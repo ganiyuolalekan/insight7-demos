@@ -474,3 +474,19 @@ def get_prompted_result(doc, tags):
     response = extract_insights(text, prompt)
 
     return source_ref, process_response(response, tags)
+
+
+def use_prompt_gen(doc, q, p, tags):
+    docs = text_to_docs(doc)
+    index = embed_docs(docs)
+    time.sleep(2)
+    sources = search_docs(index, q)
+    source_ref = {
+        source.metadata['source']: source.page_content
+        for source in sources
+    }
+    prompt = p + user_prompt_2(source_ref)
+    text = get_answer(sources, query)['output_text']
+    response = extract_insights(text, prompt)
+
+    return source_ref, process_response(response, tags)

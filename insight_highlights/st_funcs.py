@@ -2,14 +2,14 @@
 
 import pickle
 import random
-from io import StringIO
 
 import streamlit as st
 
 from api_call import file_extractor
+from read_files import read_uploaded_file
 from documentation import document_correction, prompt_testing
-from prompts import clean_document_prompt, query_for_tags, user_prompt_1, user_prompt_for_tags
-from utils import clean_doc, divider, get_prompted_result, generate_insights_highlights
+from prompts import clean_document_prompt, query, user_prompt_1
+from utils import clean_doc, divider, get_prompted_result, generate_insights_highlights, use_prompt_gen
 
 
 def test_doc(accept_multiple_files=False, return_used_test=False):
@@ -72,12 +72,12 @@ def test_doc(accept_multiple_files=False, return_used_test=False):
 
             if accept_multiple_files:
                 document = {
-                    doc.name: StringIO(doc.getvalue().decode("utf-8"))
+                    doc.name: read_uploaded_file(doc)
                     for doc in document
                 }
             else:
                 if document is not None:
-                    document = StringIO(document.getvalue().decode("utf-8")).read()
+                    document = read_uploaded_file(document)
             st.success("Successfully read document", icon='✅')
     divider()
 
@@ -116,7 +116,13 @@ def prompt_eng():
 
     document = test_doc()
 
-    prompt = st.text_area(
+    user_query = st.text_area(
+        "Enter your query:",
+        value=query, height=400,
+        help="Below is the current prompt being used"
+    )
+
+    user_prompt = st.text_area(
         "Enter your prompt:",
         value=user_prompt_1, height=600,
         help="Below is the current prompt being used"
@@ -126,7 +132,10 @@ def prompt_eng():
 
     if analyze:
         if document is not None:
-            source_ref, response = get_prompted_result(document, prompt)
+            source_ref, response = use_prompt_gen(
+                document, user_query, user_prompt,
+                ['Pain Points', 'Desires', 'Behaviours']
+            )
             st.success("Successfully analyzed document", icon='✅')
 
             input_doc, source_references, api_result = st.tabs([
@@ -153,7 +162,7 @@ def prompt_eng():
             if save_prompt:
                 st.warning("Note: if you have modified the prompt after analyse... the modified result will be saved", icon="⚠️")
                 with open(prompt_name, 'w') as f:
-                    print(prompt, file=f)
+                    print(user_prompt, file=f)
         else:
             st.warning("Please upload a document or use the preloaded document", icon="⚠️")
 
@@ -242,7 +251,7 @@ def frequency_api():
                 divider()
             else:
                 data = {'data': {
-                    doc:get_prompted_result(doc, specified_tags)[1]['data']
+                    doc: get_prompted_result(doc, specified_tags)[1]['data']
                     for doc in documents
                 }}
                 st.success("Successfully analyzed documents and retrieved insights", icon='✅')
