@@ -1,13 +1,28 @@
 import io
+import csv
 import PyPDF2
 import docx2txt
-import pandas as pd
+
+THRESH = 80
+
+
+def is_significant_text(text):
+    """Check if the text contains a significant amount of alphanumeric characters"""
+
+    return sum(1 for char in text if char.isalnum()) >= THRESH
 
 
 def read_uploaded_file(file):
     file_extension = file.name.split('.')[-1]
     if file_extension == 'csv':
-        return pd.read_csv(file).to_string(index=False)
+        rows = [
+            ' '.join(list(map(str, row)))
+            for i, row in enumerate(
+                csv.reader(io.TextIOWrapper(file))
+            )
+            if is_significant_text(' '.join(list(map(str, row))))
+        ]
+        return '\n\n'.join(rows[1:])
     elif file_extension == 'docx':
         return docx2txt.process(file)
     elif file_extension == 'pdf':

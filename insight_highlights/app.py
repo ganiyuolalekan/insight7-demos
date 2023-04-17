@@ -1,6 +1,6 @@
 import streamlit as st
 
-from utils import app_meta, divider
+from app_utils import app_meta, divider
 from documentation import introduction
 from st_funcs import doc_correction, prompt_eng, theme_api, frequency_api
 

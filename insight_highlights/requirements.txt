@@ -14,3 +14,4 @@ faiss-cpu==1.7.3
 flask-talisman==1.0.0
 PyPDF2==3.0.1
 pandas==1.5.1
+spacy==2.3.9

@@ -17,6 +17,11 @@ QUESTION: {question}
 =========
 FINAL ANSWER:"""
 
+STUFF_PROMPT = PromptTemplate(
+    template=template,
+    input_variables=["summaries", "question"]
+)
+
 query = """Please analyze the given document and generate a report that includes pain points, desires, and behaviors, grouped by category. For each pain point, desire, and behavior, please also include the source/reference from the document.
 
 In the report, please use the following format:
@@ -31,15 +36,44 @@ Behaviours
 <behaviour insights> (<source/reference>)
 ...
 
-Please ensure that each insight is concise and relevant to the category it belongs to. Also, please frame the insights to have a tone that communicates to a manager or third party reader, ensuring it is relevant to readers."""
+Please ensure that each insight is uniquely classified under the best category it belongs to. Each insights must be structured similar to these two examples: (1) “User wants more feedback from the app so that they can get more value from it” and (2) “User is struggling with using the projects feature because the user experience is bad.”"""
 
-STUFF_PROMPT = PromptTemplate(
-    template=template,
-    input_variables=["summaries", "question"]
-)
+# query = """Analyze this customer feedback dataset for insights including pain points, desires, and behaviors. Group the insights into categories and for each pain point, desire, and behavior include the source/reference from the dataset.
+# Share the insights using the following format:
+# Pain Points
+# <pain point insights> (<source/reference>)
+# ...
+# Desires
+# <desire insights> (<source/reference>)
+# ...
+# Behaviours
+# <behaviour insights> (<source/reference>)
+# ...
+# Ensure that each insight is uniquely classified under the best category it belongs to. Each insights must be structured similar to these two examples: (1) “User wants more feedback from the app so that they can get more value from it” and (2) “User is struggling with using the projects feature because the user experience is bad"""
 
-user_prompt_1 = """Please analyze the insights report provided and categorize the pain points, desires, and behaviors into topics/themes. For each topic, please include a descriptive name that reflects the main theme of the category, and group the associated pain points, desires, and behaviors under that topic.
-Please use the following format to organize the results into a JSON format:
+# user_prompt_1 = """Please analyze the insights report provided and categorize the pain points, desires, and behaviors into topics/themes. For each topic, please include a descriptive name that reflects the main theme of the category, and group the associated pain points, desires, and behaviors under that topic.
+# Please use the following format to organize the results into a JSON format:
+# {
+#     "<topic name 1>": {
+#         "Pain Points": [
+#             ["<point>", "<point source>"],
+#             ...
+#         ],
+#         "Desires": [
+#             ["<point>", "<point source>"],
+#             ...
+#         ],
+#         "Behaviours": [
+#             ["<point>", "<point source>"],
+#             ...
+#         ]
+#     },
+#     ...,
+# }
+# Make sure that each pain point, desire, and behavior is associated with the relevant category and that the topics are clearly defined and descriptive of the points they contain. Please also ensure that each point is properly formatted with its source."""
+
+user_prompt_1 = """Analyze the insights extracted and categorize the pain points, desires, and behaviors into topics/themes. For each topic, include a descriptive name that reflects the main theme of the category, and group the associated pain points, desires, and behaviors under that topic.
+Use the following format to organize the results into a JSON format:
 {
     "<topic name 1>": {
         "Pain Points": [
@@ -117,4 +151,45 @@ Make sure that each pain point, desire, and behavior is associated with the rele
 query_for_tags = lambda tags: f"""Please analyze the given document and generate a report that includes {points(tags)}, grouped by category. For each {points(tags)}, please also include the source/reference from the document.
 In the report, please use the following format:
 {query_points(tags)}
-Please ensure that each insight is concise and relevant to the category it belongs to. Also, please frame the insights to have a tone that communicates to a manager or third party reader, ensuring it is relevant to readers."""
+Please ensure that each insight is concise and relevant to the category it belongs to. Each insight to be structured similar to : “User wants more feedback from the app so that they can get more value from it” or “User is struggling with using the projects feature because the user experience is bad”"""
+
+survey_query = """Given the following documents, list their source number as well as the general insight from each line in each document.
+Insights must be structured in similar manner to these two examples: 
+    1. Users want more feedback from the <app-name> so that they can get more value from it... 
+    2. Users are struggling with using the <project-name> feature because the user experience is bad...
+    3. Users are saying tutors are unspecific when bringing up logical information...
+Always use plural in your insights output, and ignore documents that contains repetitions or irrelevant information.
+Also get the insight type for each document, which is one of pain point, desire or behaviour. Use this format:
+[
+    [<source-number>, <insight>, <insight-type>],
+    ...
+]
+NOTE: <source-number> MUST ONLY be the source number with no other inclusion."""
+
+survey_prompt = """Given the following list, group the items in the list by their <insight-type>, which is one of pain point, desire or behaviour.
+Represent the information using this format:
+{
+    'Pain Points': [
+        {
+            'topic': <insight>,
+            'highlights': <tag>,
+        }
+        ...
+    ]
+    'Desires': [
+        {
+            'topic': <insight>,
+            'highlights': <tag>,
+        }
+        ...
+    ]
+    'Behaviours': [
+        {
+            'topic': <insight>,
+            'highlights': <tag>,
+        }
+        ...
+    ]
+}
+Ensure that each tag is perfectly mapped and contains no extra text than the tag. Example 'highlights': "1",
+NOTE: the input is a list of lists where each list contains [<tag>, <insight>, <insight-type>]"""

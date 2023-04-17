@@ -1,15 +1,16 @@
 # Test for how the cleaning layer should function
 
-import pickle
 import random
 
 import streamlit as st
 
+from app_utils import divider
 from api_call import file_extractor
 from read_files import read_uploaded_file
 from documentation import document_correction, prompt_testing
 from prompts import clean_document_prompt, query, user_prompt_1
-from utils import clean_doc, divider, get_prompted_result, generate_insights_highlights, use_prompt_gen
+from gpt_calls import clean_doc
+from prompt_converter import get_prompted_result, use_prompt_gen, get_result_frequency
 
 
 def test_doc(accept_multiple_files=False, return_used_test=False):
@@ -68,17 +69,22 @@ def test_doc(accept_multiple_files=False, return_used_test=False):
                 document = file_extractor(file_url)
                 st.success("File extracted successfully", icon='✅')
         else:
-            document = st.file_uploader("Enter a document file:", accept_multiple_files=accept_multiple_files)
+            document = st.file_uploader("Enter document(s) file:", accept_multiple_files=accept_multiple_files)
+
+            if len(document):
+                st.success("Successfully read document", icon='✅')
 
             if accept_multiple_files:
                 document = {
-                    doc.name: read_uploaded_file(doc)
+                    doc.name: [
+                        read_uploaded_file(doc),
+                        doc.name.split('.')[-1].lower()
+                    ]
                     for doc in document
                 }
             else:
                 if document is not None:
                     document = read_uploaded_file(document)
-            st.success("Successfully read document", icon='✅')
     divider()
 
     if return_used_test:
@@ -222,47 +228,18 @@ def frequency_api():
         divider()
 
         theme_similarity_thresh = st.slider(
-            "Similarity Thresh", min_value=.0, max_value=1.00, value=.20, step=.001,
+            "Similarity Thresh", min_value=.0, max_value=1.00, value=.35, step=.001,
             help="The greater the theme similarity, the more strict the insights picked"
         )
 
-        specified_tags = st.multiselect(
-            'Select the tags to apply to the API',
-            ['Pain Points', 'Desires', 'Behaviours', 'Bugs', 'Threads']
-        )
+        # specified_tags = st.multiselect(
+        #     'Select the tags to apply to the API',
+        #     ['Pain Points', 'Desires', 'Behaviours', 'Bugs', 'Threads']
+        # )
 
-        # specified_tags = ['Pain Points', 'Desires', 'Behaviours']
+        specified_tags = ['Pain Points', 'Desires', 'Behaviours']
 
         analyze = st.button("Analyze documents")
 
         if analyze:
-            if use_test_output:
-                data = pickle.load(open('data/serialized_theme.p', 'rb'))
-                insights_results = pickle.load(open('data/serialized_frequency.p', 'rb'))
-                # insights_results = generate_insights_highlights(
-                #     data=data,
-                #     tags=specified_tags,
-                #     thresh=theme_similarity_thresh
-                # )
-                # pickle.dump(insights_results, open('data/serialized_frequency.p', 'wb'))
-                st.success("Successfully analyzed documents and retrieved insights", icon='✅')
-                divider()
-                st.success("Successfully mapped similar highlights to corresponding insights", icon='✅')
-                divider()
-            else:
-                data = {'data': {
-                    doc: get_prompted_result(doc, specified_tags)[1]['data']
-                    for doc in documents
-                }}
-                st.success("Successfully analyzed documents and retrieved insights", icon='✅')
-                divider()
-
-                insights_results = generate_insights_highlights(
-                    data=data,
-                    tags=specified_tags,
-                    thresh=theme_similarity_thresh
-                )
-                st.success("Successfully mapped similar highlights to corresponding insights", icon='✅')
-                divider()
-
-            st.write(insights_results)
+            st.write(get_result_frequency(documents, thresh=theme_similarity_thresh))
