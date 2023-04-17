@@ -17,6 +17,8 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 def get_answer(docs: List[Document], query: str) -> Dict[str, Any]:
     """Gets an answer to a question from a list of Documents."""
 
+    openai.api_key = OPENAI_API_KEY
+
     chain = load_qa_with_sources_chain(
         OpenAIChat(
             temperature=0.01,
