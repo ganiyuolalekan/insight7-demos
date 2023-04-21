@@ -5,12 +5,12 @@ import time
 
 import streamlit as st
 
-from func_store import group_insights_by_similarity, group_similar_sentences, time_calculator
+from func_store import group_insights_by_similarity, group_similar_sentences, group_similar_sentences_v2, group_similar_sentences_v3, time_calculator
 
 from gpt_calls import get_answer, extract_insights
 
-from func_store import align_docs
-from prompts import survey_prompt, survey_query
+from func_store import align_docs, align_docs_v2
+from prompts import survey_prompt, survey_query, survey_query_pro
 from utils import embed_docs, search_docs, text_to_docs, text_to_docs_survey
 
 from prompts import i_user_prompt, query, user_prompt_2, query_for_tags, user_prompt_1
@@ -138,52 +138,68 @@ def get_result_frequency(data, thresh=.35):
     time_calculator(
         "Document sorting time - responsible for processing csv and other extensions",
         start_time, tracker_time)
-    groups = group_similar_sentences(list(tracker.keys()), threshold=thresh)
+
+    groups = group_similar_sentences_v2(list(tracker.keys()), threshold=thresh)
     grouping_time = time.time()
     time_calculator(
         "Similar text grouping time - responsible for grouping similar sentences using the specified threshold",
         tracker_time, grouping_time)
-    docs = text_to_docs_survey(['\n\n'.join(group) for group in groups if len(group) > 1])
+
+    docs = text_to_docs_survey(['\n\n'.join(group) for group in groups if (len(group) > 1) and (len(group) < 10)])
+    doc_survey_time = time.time()
+    time_calculator(
+        "Text to docs - responsible for grouping similar sentences using the specified threshold",
+        grouping_time, doc_survey_time)
+
     index = embed_docs(docs)
     embedding_time = time.time()
     time_calculator(
         "Embedding time - time taken to embed the document",
-        grouping_time, embedding_time)
-    sources = search_docs(index, query)
+        doc_survey_time, embedding_time)
+
+    sources = search_docs(index, survey_query)
+    source_time = time.time()
+    time_calculator(
+        "Search document - time taken to embed the document",
+        embedding_time, source_time)
+
     source_ref = {
         str(source.metadata['source']): source.page_content
         for source in sources
     }
-    text = get_answer(sources, query)['output_text']
+
+    text = get_answer(sources, survey_query_pro)['output_text']
     first_prompt_layer_time = time.time()
     time_calculator(
         "Time to query document using prompt",
-        embedding_time, first_prompt_layer_time)
-    response = eval(extract_insights(text, survey_prompt))
-    second_prompt_layer_time = time.time()
+        source_time, first_prompt_layer_time)
     time_calculator(
-        "Time to compute final result using prompt",
-        first_prompt_layer_time, second_prompt_layer_time)
-    time_calculator(
-        "The program (API) executed for",
-        start_time, second_prompt_layer_time)
+        "Program execution time",
+        start_time, first_prompt_layer_time)
 
-    result = {}
-    for tag in response.keys():
-        result[tag] = []
-        for insight in response[tag]:
-            topic = insight['topic']
-            highlights = [
-                [text, tracker[text]]
-                for text in source_ref[insight['highlights']].split('\n\n')
-            ]
-            count = len(highlights)
+    result = {
+        "Pain Points": [],
+        "Desires": [],
+        "Behaviours": []
+    }
 
-            result[tag].append({
-                'topic': topic,
-                'highlights': highlights,
-                'count': count
-            })
+    for texts in eval(text):
+        _source, _insight, _tag, _solution = texts
+        tag = ' '.join(list(map(lambda txt: txt.capitalize(), _tag.split(' ')))) + 's'
+
+        highlights = [
+            [text, tracker[text]]
+            for text in source_ref[str(_source)].split('\n\n')
+        ]
+
+        res = {
+            'topic': _insight,
+            'solution': _solution,
+            'highlights': highlights,
+            'count': len(highlights)
+        }
+
+        result[tag].append(res)
 
     return {'data': result}
 

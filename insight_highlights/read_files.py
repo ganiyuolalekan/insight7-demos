@@ -20,7 +20,7 @@ def read_uploaded_file(file):
             for i, row in enumerate(
                 csv.reader(io.TextIOWrapper(file))
             )
-            if is_significant_text(' '.join(list(map(str, row))))
+            # if is_significant_text(' '.join(list(map(str, row))))
         ]
         return '\n\n'.join(rows[1:])
     elif file_extension == 'docx':

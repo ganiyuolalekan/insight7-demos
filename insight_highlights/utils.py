@@ -1,6 +1,7 @@
 # Utility Functions
 
-from llms import OpenAIEmbeddings
+# from llms import OpenAIEmbeddings
+from langchain.embeddings.openai import OpenAIEmbeddings
 
 from typing import Any, Dict, List
 
@@ -62,9 +63,14 @@ def text_to_docs_survey(texts) -> List[Document]:
 def embed_docs(docs: List[Document]) -> VectorStore:
     """Embeds a list of Documents and returns a FAISS index"""
 
+    # embeddings = OpenAIEmbeddings(
+    #     # openai_api_key=st.session_state.get("OPENAI_API_KEY")
+    # )  # type: ignore
     embeddings = OpenAIEmbeddings(
-        # openai_api_key=st.session_state.get("OPENAI_API_KEY")
-    )  # type: ignore
+        # deployment="sample_deployment",
+        model="text-embedding-ada-002",
+        chunk_size=5000
+    )
     index = FAISS.from_documents(docs, embeddings)
 
     return index

@@ -23,7 +23,7 @@ def get_answer(docs: List[Document], query: str) -> Dict[str, Any]:
         OpenAIChat(
             temperature=0.01,
             model_name="gpt-4",
-            max_tokens=1000
+            max_tokens=3000
         ),
         chain_type="stuff",
         prompt=STUFF_PROMPT,
@@ -46,7 +46,7 @@ def extract_insights(text, user_prompt):
         model="gpt-4",
         messages=conversation,
         temperature=0.01,
-        max_tokens=1024,
+        max_tokens=4000,
         top_p=1.0,
         frequency_penalty=0.0,
         presence_penalty=0.0

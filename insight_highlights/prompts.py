@@ -153,18 +153,26 @@ In the report, please use the following format:
 {query_points(tags)}
 Please ensure that each insight is concise and relevant to the category it belongs to. Each insight to be structured similar to : “User wants more feedback from the app so that they can get more value from it” or “User is struggling with using the projects feature because the user experience is bad”"""
 
-survey_query = """Given the following documents, list their source number as well as the general insight from each line in each document.
-Insights must be structured in similar manner to these two examples: 
-    1. Users want more feedback from the <app-name> so that they can get more value from it... 
-    2. Users are struggling with using the <project-name> feature because the user experience is bad...
-    3. Users are saying tutors are unspecific when bringing up logical information...
+survey_query = """Given the following documents, list their sources as well as the general insight from each line in each document. Insights must be structured in similar manner to these two examples: 
+1. Users want more feedback from the <app-name> so that they can get more value from it. 
+2. Users are struggling with using the <project-name> feature because the user experience is bad. 
 Always use plural in your insights output, and ignore documents that contains repetitions or irrelevant information.
 Also get the insight type for each document, which is one of pain point, desire or behaviour. Use this format:
 [
-    [<source-number>, <insight>, <insight-type>],
+    [<source>, <insight>, <insight-type>],
     ...
-]
-NOTE: <source-number> MUST ONLY be the source number with no other inclusion."""
+]"""
+
+survey_query_pro = """Given the following documents, list their sources as well as the general insight from each line in each document. Insights must be structured in similar manner to these two examples: 
+1. Users want more feedback from the <app-name> so that they can get more value from it. 
+2. Users are struggling with using the <project-name> feature because the user experience is bad. 
+Always use plural in your insights output, and ignore documents that contains repetitions or irrelevant information.
+Also if the insight indicates a problem, or a complaints, state a potential solution to that issue as <solution> and if it's not one of either, set <solution> to ""
+Also get the insight type for each document, which is one of pain point, desire or behaviour. Use this format:
+[
+    [<source>, <insight>, <insight-type>, <solution>],
+    ...
+]"""
 
 survey_prompt = """Given the following list, group the items in the list by their <insight-type>, which is one of pain point, desire or behaviour.
 Represent the information using this format:
@@ -172,24 +180,24 @@ Represent the information using this format:
     'Pain Points': [
         {
             'topic': <insight>,
-            'highlights': <tag>,
+            'highlights': <source>,
         }
         ...
     ]
     'Desires': [
         {
             'topic': <insight>,
-            'highlights': <tag>,
+            'highlights': <source>,
         }
         ...
     ]
     'Behaviours': [
         {
             'topic': <insight>,
-            'highlights': <tag>,
+            'highlights': <source>,
         }
         ...
     ]
 }
-Ensure that each tag is perfectly mapped and contains no extra text than the tag. Example 'highlights': "1",
-NOTE: the input is a list of lists where each list contains [<tag>, <insight>, <insight-type>]"""
+if source contains multiple values separated by comma's, pick the first one out of them.
+NOTE: the input is a list of lists where each list contains [<source>, <insight>, <insight-type>]"""

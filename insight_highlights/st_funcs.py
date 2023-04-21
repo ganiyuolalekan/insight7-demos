@@ -228,7 +228,7 @@ def frequency_api():
         divider()
 
         theme_similarity_thresh = st.slider(
-            "Similarity Thresh", min_value=.0, max_value=1.00, value=.35, step=.001,
+            "Similarity Thresh", min_value=.0, max_value=1.00, value=.5, step=.001,
             help="The greater the theme similarity, the more strict the insights picked"
         )
 

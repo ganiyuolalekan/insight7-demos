@@ -9,12 +9,16 @@ from difflib import SequenceMatcher
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sentence_transformers import SentenceTransformer, util
+from scipy.sparse import csr_matrix
+from scipy.sparse.csgraph import connected_components
+from collections import defaultdict
+from typing import Dict, List
 
 nltk.download('punkt')
 nltk.download('stopwords')
 
 THRESH = .35
-MIN_SENTENCES = 3
+MIN_SENTENCES = 2
 TOP_PERCENTAGE = .7
 similarity_model = SentenceTransformer('sentence-transformers/all-MiniLM-L6-v2')
 
@@ -259,6 +263,50 @@ def group_similar_sentences(reviews, threshold=THRESH):
     return clusters
 
 
+def group_similar_sentences_v2(reviews, threshold=0.5):
+    # Vectorize reviews using TfidfVectorizer
+    vectorizer = TfidfVectorizer(stop_words='english')
+    x = vectorizer.fit_transform(reviews)
+
+    # Compute pairwise cosine similarity
+    similarity_matrix = csr_matrix(x @ x.T)
+    connected_components_matrix = connected_components(similarity_matrix > threshold)
+
+    # Group reviews into clusters
+    clusters = [[] for _ in range(connected_components_matrix[0])]
+    for i, cluster_id in enumerate(connected_components_matrix[1]):
+        clusters[cluster_id].append(reviews[i])
+
+    return clusters[1:]
+
+
+def group_similar_sentences_v3(reviews, threshold=THRESH):
+    # Vectorize reviews using TfidfVectorizer
+    vectorizer = TfidfVectorizer(stop_words='english')
+    x = vectorizer.fit_transform(reviews)
+
+    # Compute pairwise cosine similarity
+    pairwise_similarity = np.dot(x, x.T)
+
+    # Group reviews into clusters
+    n_reviews = len(reviews)
+    visited = set()
+    clusters = []
+    for i in range(n_reviews):
+        if i not in visited:
+            cluster = []
+            cluster.append(reviews[i])
+            visited.add(i)
+            for j in range(i + 1, n_reviews):
+                if j not in visited and pairwise_similarity[i, j] >= threshold:
+                    cluster.append(reviews[j])
+                    visited.add(j)
+            clusters.append(cluster)
+
+    return clusters
+
+
+
 def preprocess_text(text, min_sentences=MIN_SENTENCES):
     # Split text into sentences
     sentences = nltk.sent_tokenize(text)
@@ -283,6 +331,28 @@ def preprocess_text(text, min_sentences=MIN_SENTENCES):
 
     return relevant_text_strings
 
+def preprocess_text_v2(text, min_sentences=5):
+    # Split text into sentences
+    sentences = nltk.sent_tokenize(text)
+
+    # Convert sentences to a NumPy array for faster processing
+    sentences_array = np.array(sentences)
+
+    # Compute the number of relevant texts
+    num_relevant_texts = len(sentences) // min_sentences
+
+    # Compute the indices of the relevant texts
+    relevant_text_indices = np.arange(num_relevant_texts) * min_sentences
+
+    # Split the sentences into relevant texts
+    relevant_texts = np.split(sentences_array, relevant_text_indices[1:])
+
+    # Convert relevant texts back to single strings
+    relevant_text_strings = [" ".join(text) for text in relevant_texts]
+
+    return relevant_text_strings
+
+
 
 def vectorize_sentences(sentences):
     vectorize = TfidfVectorizer()
@@ -297,7 +367,7 @@ def rank_sentences(sentence_vectors):
 
 
 def summarize_text(text, thresh=TOP_PERCENTAGE):
-    relevant_sentences = preprocess_text(text)
+    relevant_sentences = preprocess_text_v2(text)
     sentence_vectors = vectorize_sentences(relevant_sentences)
     sentence_scores = rank_sentences(sentence_vectors)
 
@@ -343,6 +413,29 @@ def align_docs(data):
                 tracker[doc] = _id
 
     return tracker
+
+
+def align_docs_v2(data: Dict[str, tuple]) -> Dict[str, str]:
+    tracker = {}
+    groups = defaultdict(list)
+
+    for _id, (_data, format_type) in data.items():
+        groups[format_type.lower()].append((_id, _data))
+
+    if groups['others']:
+        for _id, doc in groups['others']:
+            texts = summarize_text(doc)
+            for text in texts:
+                tracker[text] = _id
+
+    if groups['csv']:
+        for _id, docs in groups['csv']:
+            docs = docs.split('\n\n')
+            for doc in docs:
+                tracker[doc] = _id
+
+    return tracker
+
 
 
 def time_calculator(process_name, start_time, end_time):
