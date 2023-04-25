@@ -2,7 +2,7 @@ import streamlit as st
 
 from app_utils import app_meta, divider
 from documentation import introduction
-from st_funcs import doc_correction, prompt_eng, theme_api, frequency_api
+from st_funcs import theme_api, frequency_api
 
 
 app_meta()
@@ -18,18 +18,6 @@ with st.sidebar:
 
 if start_project:
     with st.sidebar:
-        test_document_correction = st.checkbox(
-            label="Test the document fine-tuning Layer",
-            help="Test fine-tuning API",
-            value=False
-        )
-        divider()
-        test_prompt = st.checkbox(
-            label="Test the prompt Layer",
-            help="Test prompt API",
-            value=False
-        )
-        divider()
         test_theme_api = st.checkbox(
             label="Test the theme-based API Layer",
             help="Test prompt API",
@@ -42,11 +30,7 @@ if start_project:
             value=False
         )
 
-    if test_document_correction:
-        doc_correction()
-    elif test_prompt:
-        prompt_eng()
-    elif test_theme_api:
+    if test_theme_api:
         theme_api()
     elif test_frequency_api:
         frequency_api()

@@ -12,7 +12,7 @@ from sentence_transformers import SentenceTransformer, util
 from scipy.sparse import csr_matrix
 from scipy.sparse.csgraph import connected_components
 from collections import defaultdict
-from typing import Dict, List
+from typing import Dict
 
 nltk.download('punkt')
 nltk.download('stopwords')

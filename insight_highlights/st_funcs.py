@@ -71,8 +71,8 @@ def test_doc(accept_multiple_files=False, return_used_test=False):
         else:
             document = st.file_uploader("Enter document(s) file:", accept_multiple_files=accept_multiple_files)
 
-            if len(document):
-                st.success("Successfully read document", icon='✅')
+            # if len(document):
+            #     st.success("Successfully read document", icon='✅')
 
             if accept_multiple_files:
                 document = {
@@ -232,14 +232,28 @@ def frequency_api():
             help="The greater the theme similarity, the more strict the insights picked"
         )
 
-        # specified_tags = st.multiselect(
-        #     'Select the tags to apply to the API',
-        #     ['Pain Points', 'Desires', 'Behaviours', 'Bugs', 'Threads']
-        # )
+        specified_tags = st.multiselect(
+            'Select the tags to apply to the API',
+            ['Pain Points', 'Desires', 'Behaviours', 'Bugs', 'Threads']
+        )
 
-        specified_tags = ['Pain Points', 'Desires', 'Behaviours']
+        # specified_tags = ['Pain Points', 'Desires', 'Behaviours']
 
         analyze = st.button("Analyze documents")
 
         if analyze:
-            st.write(get_result_frequency(documents, thresh=theme_similarity_thresh))
+            source_ref, response = get_result_frequency(documents, specified_tags, thresh=theme_similarity_thresh)
+            st.success("Successfully analyzed document", icon='✅')
+
+            source_references, api_result = st.tabs([
+                "Source reference from document",
+                "Result from API"
+            ])
+
+            with source_references:
+                st.header("Reference text with insights from document")
+                st.write(source_ref)
+
+            with api_result:
+                st.header("Here's the result from your prompt")
+                st.write(response)

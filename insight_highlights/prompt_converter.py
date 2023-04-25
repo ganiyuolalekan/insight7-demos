@@ -10,10 +10,10 @@ from func_store import group_insights_by_similarity, group_similar_sentences, gr
 from gpt_calls import get_answer, extract_insights
 
 from func_store import align_docs, align_docs_v2
-from prompts import survey_prompt, survey_query, survey_query_pro
+from prompts import survey_prompt, survey_query, survey_query_pro, freq_survey_query_pro
 from utils import embed_docs, search_docs, text_to_docs, text_to_docs_survey
 
-from prompts import i_user_prompt, query, user_prompt_2, query_for_tags, user_prompt_1
+from prompts import i_user_prompt, query, user_prompt_2, topic_query_for_tags, user_prompt_1
 
 
 def process_response(response, tags):
@@ -54,19 +54,47 @@ def get_result(doc, tags):
 
 def get_prompted_result(doc, tags):
     # query = query_for_tags(tags)
+    start_time = time.time()
     docs = text_to_docs(doc)
+    doc_time = time.time()
+    time_calculator(
+        "Text to docs - responsible for creating doc-stores",
+        start_time, doc_time)
     index = embed_docs(docs)
-    time.sleep(2)
-    sources = search_docs(index, query_for_tags(tags))
+    embedding_time = time.time()
+    time_calculator(
+        "Embedding time - time taken to embed the document",
+        doc_time, embedding_time)
+    sources = search_docs(index, topic_query_for_tags(tags))
+    source_time = time.time()
+    time_calculator(
+        "Search document - time taken to search the document",
+        embedding_time, source_time)
     source_ref = {
         source.metadata['source']: source.page_content
         for source in sources
     }
-    prompt = user_prompt_1 + user_prompt_2(source_ref)
-    text = get_answer(sources, query)['output_text']
-    response = extract_insights(text, prompt)
+    result = eval(get_answer(sources, topic_query_for_tags(tags))['output_text'])
+    first_prompt_layer_time = time.time()
+    time_calculator(
+        "Time to query document using prompt",
+        source_time, first_prompt_layer_time)
+    time_calculator(
+        "Program execution time",
+        start_time, first_prompt_layer_time)
 
-    return source_ref, process_response(response, tags)
+    categories = tags
+    for topic in result:
+        for tag in result[topic]:
+            for i in range(len(result[topic][tag])):
+                result[topic][tag][i][2] = source_ref[result[topic][tag][i][2]]
+
+        result[topic]['Sentiment Count'] = sum([
+            len(result[topic][cat])
+            for cat in categories
+        ])
+
+    return source_ref, {'data': result}
 
 
 def get_prompted_survey_result(docs):
@@ -131,9 +159,9 @@ def generate_survey_result(results, tags, threshold=.4):
     return res
 
 
-def get_result_frequency(data, thresh=.35):
+def get_result_frequency(data, tags, thresh=.35):
     start_time = time.time()
-    tracker = align_docs(data)
+    tracker = align_docs_v2(data)
     tracker_time = time.time()
     time_calculator(
         "Document sorting time - responsible for processing csv and other extensions",
@@ -148,7 +176,7 @@ def get_result_frequency(data, thresh=.35):
     docs = text_to_docs_survey(['\n\n'.join(group) for group in groups if (len(group) > 1) and (len(group) < 10)])
     doc_survey_time = time.time()
     time_calculator(
-        "Text to docs - responsible for grouping similar sentences using the specified threshold",
+        "Text to docs - responsible for creating doc-stores",
         grouping_time, doc_survey_time)
 
     index = embed_docs(docs)
@@ -157,10 +185,10 @@ def get_result_frequency(data, thresh=.35):
         "Embedding time - time taken to embed the document",
         doc_survey_time, embedding_time)
 
-    sources = search_docs(index, survey_query)
+    sources = search_docs(index, freq_survey_query_pro(tags))
     source_time = time.time()
     time_calculator(
-        "Search document - time taken to embed the document",
+        "Search document - time taken to search the document",
         embedding_time, source_time)
 
     source_ref = {
@@ -168,7 +196,7 @@ def get_result_frequency(data, thresh=.35):
         for source in sources
     }
 
-    text = get_answer(sources, survey_query_pro)['output_text']
+    text = get_answer(sources, freq_survey_query_pro(tags))['output_text']
     first_prompt_layer_time = time.time()
     time_calculator(
         "Time to query document using prompt",
@@ -177,29 +205,23 @@ def get_result_frequency(data, thresh=.35):
         "Program execution time",
         start_time, first_prompt_layer_time)
 
-    result = {
-        "Pain Points": [],
-        "Desires": [],
-        "Behaviours": []
-    }
+    result = {tag: [] for tag in tags}
 
     for texts in eval(text):
         _source, _insight, _tag, _solution = texts
-        tag = ' '.join(list(map(lambda txt: txt.capitalize(), _tag.split(' ')))) + 's'
+        _tag = ' '.join(list(map(lambda txt: txt.capitalize(), _tag.split(' '))))
 
         highlights = [
             [text, tracker[text]]
             for text in source_ref[str(_source)].split('\n\n')
         ]
 
-        res = {
+        result[_tag].append({
             'topic': _insight,
             'solution': _solution,
             'highlights': highlights,
             'count': len(highlights)
-        }
+        })
 
-        result[tag].append(res)
-
-    return {'data': result}
+    return source_ref, {'data': result}
 

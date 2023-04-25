@@ -22,21 +22,26 @@ STUFF_PROMPT = PromptTemplate(
     input_variables=["summaries", "question"]
 )
 
-query = """Please analyze the given document and generate a report that includes pain points, desires, and behaviors, grouped by category. For each pain point, desire, and behavior, please also include the source/reference from the document.
-
-In the report, please use the following format:
-
-Pain Points
-<pain point insights> (<source/reference>)
-...
-Desires
-<desire insights> (<source/reference>)
-...
-Behaviours
-<behaviour insights> (<source/reference>)
-...
-
-Please ensure that each insight is uniquely classified under the best category it belongs to. Each insights must be structured similar to these two examples: (1) “User wants more feedback from the app so that they can get more value from it” and (2) “User is struggling with using the projects feature because the user experience is bad.”"""
+query = """Analyze the given document and generate a report that includes pain points, desires, and behaviors. Group this report by defining descriptive & relatable topic titles. Also include insights for each pain point, desire, and behaviour & their source/reference from the document. Also if the <insight> indicates a poor feedback, provide a relatable suggestion on how this feedback can be handled as <solution> and if it's not a poor feedback, set <solution> to "". In the report, please use the following format:
+{
+    "<topic name 1>": {
+        "Pain Points": [
+            ["<insight>", "<solution>", "<source>"],
+            ...
+        ],
+        "Desires": [
+            ["<insight>", "<solution>", "<source>"],
+            ...
+        ],
+        "Behaviours": [
+            ["<insight>", "<solution>", "<source>"],
+            ...
+        ]
+    },
+    ...,
+}
+Make sure that each pain point, desire, and behavior is associated with the relevant category and that the topics are clearly defined and descriptive of the points they contain. Please also ensure that each point is accurately formatted with its source. All source must exist.
+Each insights must be structured similar to these two examples: (1) “User wants more feedback from the app so that they can get more value from it” and (2) “User is struggling with using the projects feature because the user experience is bad."""
 
 # query = """Analyze this customer feedback dataset for insights including pain points, desires, and behaviors. Group the insights into categories and for each pain point, desire, and behavior include the source/reference from the dataset.
 # Share the insights using the following format:
@@ -131,6 +136,32 @@ def json_points(tags):
     return result
 
 
+def topic_json_points(tags):
+    last_tag = tags[-1]
+    result = """{
+    "<topic name 1>": {
+        """
+    for tag in tags:
+        if tag == last_tag:
+            result += f""""{' '.join([_tag.capitalize() for _tag in tag.split(' ')])}": [
+                ["<insight>", "<solution>", "<source>"],
+                ...
+            ],
+        """
+        else:
+            result += f""""{' '.join([_tag.capitalize() for _tag in tag.split(' ')])}": [
+               ["<insight>", "<solution>", "<source>"],
+                ...
+            ],
+            """
+
+    result += """},
+    ...,
+}"""
+
+    return result
+
+
 def query_points(tags):
     result = """"""
 
@@ -153,6 +184,11 @@ In the report, please use the following format:
 {query_points(tags)}
 Please ensure that each insight is concise and relevant to the category it belongs to. Each insight to be structured similar to : “User wants more feedback from the app so that they can get more value from it” or “User is struggling with using the projects feature because the user experience is bad”"""
 
+topic_query_for_tags = lambda tags: f"""Analyze the given document and generate a report that includes {points(tags)}. Group this report by defining descriptive & relatable topic titles. Also include <insights> for each {points(tags)} & their source from the document. Also if the <insight> indicates a poor feedback, provide a relatable suggestion on how this feedback can be handled as <solution> and if it's not a poor feedback, set <solution> to "". In the report, please use the following format:
+{topic_json_points(tags)}
+Make sure that each pain point, desire, and behavior is associated with the relevant category and that the topics are clearly defined and descriptive of the points they contain. Please also ensure that each point is accurately formatted with its source. All source must exist.
+Each <insights> must be structured similar to these two examples: (1) “User wants more feedback from the app so that they can get more value from it” and (2) “User is struggling with using the projects feature because the user experience is bad."""
+
 survey_query = """Given the following documents, list their sources as well as the general insight from each line in each document. Insights must be structured in similar manner to these two examples: 
 1. Users want more feedback from the <app-name> so that they can get more value from it. 
 2. Users are struggling with using the <project-name> feature because the user experience is bad. 
@@ -167,8 +203,19 @@ survey_query_pro = """Given the following documents, list their sources as well 
 1. Users want more feedback from the <app-name> so that they can get more value from it. 
 2. Users are struggling with using the <project-name> feature because the user experience is bad. 
 Always use plural in your insights output, and ignore documents that contains repetitions or irrelevant information.
-Also if the insight indicates a problem, or a complaints, state a potential solution to that issue as <solution> and if it's not one of either, set <solution> to ""
+Also if the <insight> indicates a problem, a misunderstanding, or a complaints, provide a relatable solution based on the issue as <solution> and if it's not one of either, set <solution> to "".
 Also get the insight type for each document, which is one of pain point, desire or behaviour. Use this format:
+[
+    [<source>, <insight>, <insight-type>, <solution>],
+    ...
+]"""
+
+freq_survey_query_pro = lambda tags: f"""Given the following documents, list their sources as well as the general insight from each line in each document. Insights must be structured in similar manner to these two examples: 
+1. Users want more feedback from the <app-name> so that they can get more value from it. 
+2. Users are struggling with using the <project-name> feature because the user experience is bad. 
+Always use plural in your insights output, and ignore documents that contains repetitions or irrelevant information.
+Also if the <insight> indicates a problem, a misunderstanding, or a complaints, provide a relatable solution based on the issue as <solution> and if it's not one of either, set <solution> to "".
+Also get the insight type for each document, which is one of {points(tags)}. Use this format:
 [
     [<source>, <insight>, <insight-type>, <solution>],
     ...
